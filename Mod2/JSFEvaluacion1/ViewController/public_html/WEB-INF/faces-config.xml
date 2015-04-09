@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<faces-config version="2.1" xmlns="http://java.sun.com/xml/ns/javaee">
+    <application>
+        <resource-bundle>
+            <base-name>mensajes</base-name>
+            <var>msgs</var>
+        </resource-bundle>
+        <locale-config>
+            <default-locale>es</default-locale>
+            <supported-locale>en</supported-locale>
+        </locale-config>
+    </application>
+    <navigation-rule>
+        <from-view-id>/registro.jsf</from-view-id>
+        <navigation-case>
+            <from-outcome>cualquiera</from-outcome>
+            <to-view-id>/normal.jsf</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>importante</from-outcome>
+            <to-view-id>/vip.jsf</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+</faces-config>

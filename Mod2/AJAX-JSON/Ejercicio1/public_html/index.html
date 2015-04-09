@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <title>JSON y prototype</title>
+        <script type="text/javascript">
+          //Definicion de la clase Cliente.
+          function Cliente(nombre, direccion, descuento, nif, formapago) {
+              this.nombre = nombre;
+              this.direccion = direccion;
+              this.descuento = descuento;
+              this.nif = nif;
+              this.formapago = formapago;
+          }
+          //Definicion de la clase Producto.
+          function Producto(descripcion, cantidad, precio) {
+              this.descripcion = descripcion;
+              this.cantidad = cantidad;
+              this.precio = precio;
+          }
+          //Definicion de la clase Factura.
+          function Factura(cliente, productos) {
+              this.cliente = cliente;
+              this.productos = productos;
+              this.informacion = {
+                  totalCompra: 0,
+                  descuento: this.cliente.descuento,
+                  total: 0,
+                  formaPago: this.cliente.formapago
+              };
+          }
+          //Informacion de la empresa que emite la factura, se añade al prototype porque se supone que no cambia dicha informacion.
+          Factura.prototype.empresa = {
+              nombre : "Distrisa",
+              direccion : "Calle Empresa",
+              telefono : "123456789",
+              email : "info@distrisa.com",
+              cif : "B21212121"
+          };
+          //Metodos añadidos al prototype de Factura
+          Factura.prototype.calculaTotal = function () {
+              for (var i = 0;i < this.productos.length;i++) {
+                  this.informacion.totalCompra += this.productos[i].cantidad * this.productos[i].precio;
+              }
+              this.informacion.total = this.informacion.totalCompra * (100 - this.informacion.descuento) / 100;
+          }
+
+          Factura.prototype.muestraTotal = function () {
+              this.calculaTotal();
+              alert("TOTAL = " + this.informacion.total + " euros");
+          }
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+          var unCliente = new Cliente("Juan Sanchez", "Mi calle num 10", 10, "77588932L", "contado");
+          var losProductos = [new Producto("monitor", 1, 235),
+                            new Producto("disco duro", 2, 102),
+                            new Producto("raton", 5, 15)
+                            ];
+          var laFactura = new Factura(unCliente, losProductos);
+              laFactura.muestraTotal();
+        </script>
+    </body>
+</html>

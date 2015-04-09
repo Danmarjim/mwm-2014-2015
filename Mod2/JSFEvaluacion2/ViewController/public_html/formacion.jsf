@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" locale="#{beanIdioma.locale}">
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core">
+        <h:head>
+            <title>formacion</title>
+        </h:head>
+        <h:body>
+            <ui:composition template="/WEB-INF/facelets/plantilla.jsf">
+                <ui:define name="idiomas">
+                    <ui:include src="/WEB-INF/facelets/idiomas.jsf"/>
+                </ui:define>
+                <ui:define name="titulon">
+                    <ui:include src="/WEB-INF/facelets/titulo.jsf"/>
+                </ui:define>
+                <ui:define name="cabecera">
+                    <ui:include src="/WEB-INF/facelets/cabecera.jsf"/>
+                </ui:define>
+                <ui:define name="cuerpo">
+                    <h2>
+                        #{msgs.formacion}
+                    </h2>
+                    <ul>
+                        <li>
+                            #{msgs.ingeniero}
+                        </li>
+                        <li>
+                            #{msgs.texto}
+                             
+                            <a href="http://www.informatica.us.es" target="_blank">
+                                #{msgs.colegio2}</a>
+                             
+                            #{msgs.del}
+                             
+                            <a href="http://www.lsi.us.es/experto">
+                                #{msgs.master}</a>
+                        </li>
+                    </ul>
+                    <table border="1">
+                        <tr>
+                            <th bgcolor="Red">
+                                #{msgs.nombre}
+                            </th>
+                            <th bgcolor="Red">
+                                #{msgs.estudios}
+                            </th>
+                            <th bgcolor="Red">
+                                #{msgs.a&#241;os}
+                            </th>
+                        </tr><tr>
+                            <td>
+                                #{msgs.colegio}
+                            </td>
+                            <td>
+                                #{msgs.estudios2}
+                            </td>
+                            <td>
+                                #{msgs.a&#241;os2}
+                            </td>
+                        </tr><tr>
+                            <td>
+                                #{msgs.colegio2}
+                            </td>
+                            <td>
+                                #{msgs.estudios3}
+                            </td>
+                            <td>
+                                #{msgs.a&#241;os3}
+                            </td>
+                        </tr>
+                    </table>
+                </ui:define>
+                <ui:define name="pie">
+                    <ui:include src="/WEB-INF/facelets/pie.jsf"/>
+                </ui:define>
+            </ui:composition>
+        </h:body>
+    </html>
+</f:view>

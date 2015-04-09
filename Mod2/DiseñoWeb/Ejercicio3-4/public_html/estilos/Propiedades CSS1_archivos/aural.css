@@ -1,0 +1,57 @@
+abbr {
+	speak: normal
+}
+ACRONYM {
+	speak: normal
+}
+abbr.initialism {
+	speak: spell-out
+}
+.note {
+	cue-before: url(sounds/beep_kind_warning.au); pause-after: 100%
+}
+.SMA {
+	voice-family: child
+}
+.oops {
+	voice-family: child
+}
+.author {
+	volume: 40%
+}
+SMALL {
+	volume: 40%
+}
+TD LI.transitional {
+	volume: 40%
+}
+.elements LI.transitional {
+	volume: 40%
+}
+TD LI.frameset {
+	volume: 35%
+}
+.elements LI.frameset {
+	volume: 35%
+}
+.copyright {
+	volume: soft
+}
+.error {
+	cue-before: url(sounds/beep_jazz_piano.au)
+}
+.warning {
+	cue-before: url(sounds/beep_kind_warning.au)
+}
+.error STRONG {
+	volume: 65%
+}
+.warning STRONG {
+	volume: 65%
+}
+.congratulations {
+	play-during: url(sounds/applause.au)
+}
+.congratulations STRONG {
+	volume: loud
+}

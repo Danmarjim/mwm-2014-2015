@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<peliculas>
+    <pelicula tipo="comedia" año="1987">
+        <titulo>Raising Arizona</titulo>
+        <director>Joel Coen</director>
+        <guionista>Ethan Coen</guionista>
+        <guionista>Joel Coen</guionista>
+        <productor>Ethan Coen</productor>
+        <actor>Nicolas Cage</actor>
+        <actor>Holly Hunter</actor>
+        <actor>John Goodman</actor>
+        <comentarios>Una historia de amor con final inusitado</comentarios>
+    </pelicula>
+    <pelicula tipo="comedia" año="1988">
+        <titulo>Midnight Run</titulo>
+        <director>Martin Brest</director>
+        <guionista>George Gallo</guionista>
+        <productor>Martin Brest</productor>
+        <actor>Robert De Niro</actor> 
+        <actor>Charles Grodin</actor>
+        <comentarios>La quinta esencia de las comedias de carretera</comentarios>
+    </pelicula>
+    <pelicula tipo="misterio" año="1995">
+        <titulo>The Usual Suspects</titulo>
+        <director>Bryan Singer</director>
+        <guionista>Christopher McQuarrie</guionista>
+        <productor>Bryan Singer</productor> 
+        <productor>Michael McDonnell</productor>
+        <actor>Stephen Baldwin</actor> 
+        <actor>Gabriel Byrne</actor>
+        <actor>Benicio Del Toro</actor>
+        <actor>Chazz Palminten</actor>
+        <actor>Kevin Pollak</actor>
+        <actor>Kevin Spacey</actor>
+        <comentarios>Un crimen con cambios en el argumento muy intrincados</comentarios>
+    </pelicula>
+    <pelicula tipo="ciencia-ficcion" año="1989">
+        <titulo>The Abyss</titulo>
+        <director>James Cameron</director>
+        <guionista>James Cameron</guionista>
+        <productor>Gale Anne Hurd</productor>
+        <actor>Ed Harris</actor>
+        <actor>Mary Elizabeth Mastrantonio</actor>
+        <comentarios>Una odisea submarina muy comprometida</comentarios>
+    </pelicula>
+</peliculas>

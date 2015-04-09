@@ -1,0 +1,236 @@
+BODY {
+	BACKGROUND: white; COLOR: black
+}
+H1 {
+	FONT-WEIGHT: bold; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #c33; TEXT-ALIGN: center
+}
+H2 {
+	FONT-WEIGHT: bold; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #00008b
+}
+H3 {
+	FONT-WEIGHT: bold; BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN-LEFT: 4%; COLOR: #006400; MARGIN-RIGHT: 4%
+}
+H4 {
+	FONT-WEIGHT: bold; MARGIN-LEFT: 6%; MARGIN-RIGHT: 6%
+}
+H5 {
+	FONT-WEIGHT: bold; MARGIN-LEFT: 6%; MARGIN-RIGHT: 6%
+}
+UL {
+	MARGIN-LEFT: 6%; MARGIN-RIGHT: 6%
+}
+OL {
+	MARGIN-LEFT: 6%; MARGIN-RIGHT: 6%
+}
+DL {
+	MARGIN-LEFT: 6%; MARGIN-RIGHT: 6%
+}
+P {
+	MARGIN-LEFT: 6%; MARGIN-RIGHT: 6%
+}
+UL UL {
+	PADDING-LEFT: 0px; MARGIN-LEFT: 1.2em; MARGIN-RIGHT: 1%
+}
+TABLE OL {
+	PADDING-LEFT: 0px; MARGIN-LEFT: 1.2em; MARGIN-RIGHT: 1%
+}
+TABLE UL {
+	PADDING-LEFT: 0px; MARGIN-LEFT: 1.2em; MARGIN-RIGHT: 1%
+}
+DL OL {
+	PADDING-LEFT: 0px; MARGIN-LEFT: 1.2em; MARGIN-RIGHT: 1%
+}
+DL UL {
+	PADDING-LEFT: 0px; MARGIN-LEFT: 1.2em; MARGIN-RIGHT: 1%
+}
+PRE {
+	MARGIN-LEFT: 10%; WHITE-SPACE: pre
+}
+TABLE CAPTION {
+	FONT-WEIGHT: bolder; FONT-SIZE: larger
+}
+TABLE P {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+TABLE DL {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+OL P {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+UL P {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+DL P {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+BLOCKQUOTE P {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+.note P {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+.note UL {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+.note OL {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+.note DL {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+LI PRE {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+DD PRE {
+	MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px
+}
+P.top {
+	MARGIN-LEFT: 1%; MARGIN-RIGHT: 1%
+}
+BLOCKQUOTE {
+	BORDER-RIGHT: #dc143c thin ridge; BORDER-TOP: #dc143c thin ridge; MARGIN-LEFT: 8%; BORDER-LEFT: #dc143c thin ridge; MARGIN-RIGHT: 8%; BORDER-BOTTOM: #dc143c thin ridge
+}
+BLOCKQUOTE PRE {
+	MARGIN-LEFT: 1%; MARGIN-RIGHT: 1%
+}
+DT A {
+	MARGIN-TOP: 0.8em; FONT-WEIGHT: bold
+}
+A:link {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #00f
+}
+A:visited {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #800080
+}
+A:active {
+	BACKGROUND: #ffd700; COLOR: green
+}
+.html {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000080
+}
+.css {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #800000
+}
+.javascript {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #008000
+}
+.example {
+	MARGIN-LEFT: 10%
+}
+DFN {
+	FONT-WEIGHT: bolder; FONT-STYLE: normal
+}
+VAR SUB {
+	FONT-STYLE: normal
+}
+.note {
+	FONT-SIZE: 85%; MARGIN-LEFT: 10%
+}
+.SMA {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: fuchsia; FONT-FAMILY: Kids, "Comic Sans MS", Jester
+}
+.oops {
+	FONT-FAMILY: Jester, "Comic Sans MS"
+}
+.author {
+	FONT-STYLE: italic
+}
+.copyright {
+	CLEAR: right; FONT-SIZE: smaller; TEXT-ALIGN: right
+}
+.toolbar {
+	TEXT-ALIGN: center
+}
+.toolbar IMG {
+	FLOAT: right
+}
+.error {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #dc143c; TEXT-DECORATION: none
+}
+.warning {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #ff4500; TEXT-DECORATION: none
+}
+.error STRONG {
+	BACKGROUND: #ffd700; COLOR: #dc143c; TEXT-DECORATION: none
+}
+.warning STRONG {
+	BACKGROUND: #ffd700; COLOR: #ff4500; TEXT-DECORATION: none
+}
+.warning A:link {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #ff4500; TEXT-DECORATION: underline
+}
+.warning A:visited {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #ff4500; TEXT-DECORATION: underline
+}
+.warning A:active {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #ff4500; TEXT-DECORATION: underline
+}
+.error A:link {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #dc143c; TEXT-DECORATION: underline
+}
+.error A:visited {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #dc143c; TEXT-DECORATION: underline
+}
+.error A:active {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #dc143c; TEXT-DECORATION: underline
+}
+.error STRONG A:link {
+	BACKGROUND: #ffd700; COLOR: #dc143c
+}
+.error STRONG A:visited {
+	BACKGROUND: #ffd700; COLOR: #dc143c
+}
+.error STRONG A:active {
+	BACKGROUND: #ffd700; COLOR: #dc143c
+}
+.warning STRONG A:link {
+	BACKGROUND: #ffd700; COLOR: #ff4500
+}
+.warning STRONG A:visited {
+	BACKGROUND: #ffd700; COLOR: #ff4500
+}
+.warning STRONG A:active {
+	BACKGROUND: #ffd700; COLOR: #ff4500
+}
+COLGROUP.entity {
+	TEXT-ALIGN: center
+}
+.default {
+	FONT-STYLE: normal; TEXT-DECORATION: underline
+}
+.required {
+	FONT-WEIGHT: bold
+}
+TD LI.transitional {
+	FONT-WEIGHT: lighter; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #696969
+}
+.elements LI.transitional {
+	FONT-WEIGHT: lighter; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #696969
+}
+TD LI.frameset {
+	FONT-WEIGHT: lighter; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #808080
+}
+.elements LI.frameset {
+	FONT-WEIGHT: lighter; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #808080
+}
+.footer {
+	BORDER-TOP: black thin solid; MARGIN-TOP: 2em; PADDING-TOP: 1em
+}
+.checkedDocument {
+	BORDER-TOP: black thin solid; MARGIN-TOP: 2em; PADDING-TOP: 1em
+}
+STRONG.legal {
+	FONT-WEIGHT: normal; TEXT-TRANSFORM: uppercase
+}
+
+@media Print    
+{
+INPUT#toggler {
+	DISPLAY: none
+}
+.toolbar {
+	DISPLAY: none
+}
+
+}

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" locale="#{beanIdioma.locale}">
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core">
+        <h:head>
+            <title>cabecera</title>
+        </h:head>
+        <h:body>
+            <ui:composition>
+                <table style="width:100%; background-color:Red;">
+                    <tr>
+                        <th style="text-align:left">
+                            <h:outputLink value="inicio.jsf" styleClass="white">
+                                <h:outputText value="#{msgs.presentacion}"/>
+                            </h:outputLink>
+                            <span>&#160;&#160;</span>
+                            <h:outputLink value="formacion.jsf" styleClass="white">
+                                <h:outputText value="#{msgs.formacion}"/>
+                            </h:outputLink>
+                            <span>&#160;&#160;</span>
+                            <h:outputLink value="experiencia.jsf" styleClass="white">
+                                <h:outputText value="#{msgs.experiencia}"/>
+                            </h:outputLink>
+                            <span>&#160;&#160;</span>
+                            <h:outputLink value="idiomas.jsf" styleClass="white">
+                                <h:outputText value="#{msgs.idiomas}"/>
+                            </h:outputLink>
+                            <span>&#160;&#160;</span>
+                            <h:outputLink value="aficiones.jsf" styleClass="white">
+                                <h:outputText value="#{msgs.aficiones}"/>
+                            </h:outputLink>
+                        </th>
+                    </tr>
+                </table>
+            </ui:composition>
+        </h:body>
+    </html>
+</f:view>

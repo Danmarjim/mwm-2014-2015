@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" locale="#{beanIdioma.locale}">
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core">
+        <h:head>
+            <title>idiomas</title>
+        </h:head>
+        <h:body>
+            <ui:composition>
+                <h:form id="formulario">
+                    <h:panelGrid columns="2">
+                        <h:commandButton image="/resources/images/spain.png" style="height:50px; width:50px;"
+                                         actionListener="#{beanIdioma.cambiarLocale}">
+                            <f:param name="idioma" value="es"/>
+                        </h:commandButton>
+                        <h:commandButton image="/resources/images/uk.png" style="height:50px; width:50px;"
+                                         actionListener="#{beanIdioma.cambiarLocale}">
+                            <f:param name="idioma" value="en"/>
+                        </h:commandButton>
+                    </h:panelGrid>
+                </h:form>
+            </ui:composition>
+        </h:body>
+    </html>
+</f:view>

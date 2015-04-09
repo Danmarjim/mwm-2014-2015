@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" locale="#{beanIdioma.locale}">
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core">
+        <h:head>
+            <title>
+                <ui:insert name="titulo">
+                    #{msgs.mensaje}
+                </ui:insert>
+            </title>
+            <h:outputStylesheet name="css/miestilo.css"/>
+        </h:head>
+        <h:body>
+            <div style="float:right; padding-right:20px; padding-top:20px;">
+                <ui:insert name="idiomas">Idiomas</ui:insert>
+            </div>
+            <br/>
+             
+            <h1 style="text-align:left;">
+                <ui:insert name="titulon">Titulo</ui:insert>
+            </h1>
+             
+            <br/>
+             
+            <ui:insert name="cabecera">Cabecera</ui:insert>
+            <div style="">
+                <ui:insert name="cuerpo">Cuerpo</ui:insert>
+            </div>
+            <br/>
+            <div style="clear:both;">
+                <br/>
+            </div>
+            <ui:insert name="pie">Pie</ui:insert>
+        </h:body>
+    </html>
+</f:view>

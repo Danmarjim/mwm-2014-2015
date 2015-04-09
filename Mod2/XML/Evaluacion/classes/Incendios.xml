@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<indencios>
+  <incendio>
+    <localidad>Las Rozas</localidad>
+    <coordenadas>(250,350)</coordenadas>
+    <magnitud>15</magnitud>
+    <hectareasbosque>120</hectareasbosque>
+    <hectareasmatorral>45</hectareasmatorral>
+  </incendio>
+  <incendio>
+    <localidad>San Feliu de Llobregat</localidad>
+    <coordenadas>(550,200)</coordenadas>
+    <magnitud>10</magnitud>
+    <hectareasbosque></hectareasbosque>
+    <hectareasmatorral>57</hectareasmatorral>
+  </incendio>
+  <incendio>
+    <localidad>Pedrera</localidad>
+    <coordenadas>(300,140)</coordenadas>
+    <magnitud>7</magnitud>
+    <hectareasbosque>20</hectareasbosque>
+    <hectareasmatorral></hectareasmatorral>
+  </incendio>
+  <incendio>
+    <localidad>Linares</localidad>
+    <coordenadas>(485,420)</coordenadas>
+    <magnitud>5</magnitud>
+    <hectareasbosque></hectareasbosque>
+    <hectareasmatorral>17</hectareasmatorral>
+  </incendio>
+  <incendio>
+    <localidad>San Vicente de Barquera</localidad>
+    <coordenadas>(400,320)</coordenadas>
+    <magnitud>2</magnitud>
+    <hectareasbosque>3</hectareasbosque>
+    <hectareasmatorral>5</hectareasmatorral>
+  </incendio>
+</indencios>

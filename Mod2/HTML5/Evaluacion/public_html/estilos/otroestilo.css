@@ -1,0 +1,17 @@
+@charset "windows-1252";
+
+
+#lateralIzq {
+    float: left;
+    width: 20%;
+}
+
+#lateralDer {
+    float: right;
+    width: 80%;
+}
+
+#pie {
+    clear: both;
+    background: Silver;
+}

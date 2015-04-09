@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<incendios xmlns="http://www.example.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.example.org incendios.xsd">
+    <incendio controlado="false" magnitud="15">
+        <localidad>Las Rozas</localidad>
+        <coordenadas>(250,350)</coordenadas>
+        <hectareasB>120</hectareasB>
+        <hectareasM>45</hectareasM>
+    </incendio>
+    <incendio controlado="false" magnitud="7">
+        <localidad>Pedrera</localidad>
+        <coordenadas>(300,140)</coordenadas>
+        <hectareasB>20</hectareasB>
+        <hectareasM></hectareasM>
+    </incendio>
+    <incendio controlado="true" magnitud="5">
+        <localidad>Linares</localidad>
+        <coordenadas>(485,200)</coordenadas>
+        <hectareasB></hectareasB>
+        <hectareasM>17</hectareasM>
+    </incendio>
+    <incendio controlado="false" magnitud="10">
+        <localidad>San Vicente de la Barquera</localidad>
+        <coordenadas>(550,200)</coordenadas>
+        <hectareasB></hectareasB>
+        <hectareasM>57</hectareasM>
+    </incendio>
+    <incendio controlado="true" magnitud="2">
+        <localidad>San Feliu de Llobregat</localidad>
+        <coordenadas>(400,320)</coordenadas>
+        <hectareasB>3</hectareasB>
+        <hectareasM>5</hectareasM>
+    </incendio>
+</incendios>

@@ -1,0 +1,107 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head lang="ES">
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <meta name="description" content="Página principal de Daniel Martin Jimenez"/>
+        <meta name="keywords" content="ejemplo,html,daniel,martin,jimenez,estudiante"/>
+        <meta name="robots" content="no index,follow"/>
+        <meta http-equiv="Refresh" content="5;URL=http://www.google.es"/>
+        <title>P&aacute;gina personal de Daniel Mart&iacute;n Jimenez</title>
+        <style type="text/css">
+            H1 {
+                color: Blue;
+                font-family: 'Times New Roman';
+                font-size: xx-large;
+                font-style: oblique;
+            }
+
+            H2 {
+                color: Red;
+                font-family: 'Courier New';
+                font-size: medium;
+                font-style: italic;
+            }
+        </style>
+        <link rel="stylesheet" media="screen" href="miestilo.css" type="text/css"/>
+    </head>
+    <body bgcolor="Aqua">
+        <a id="principio"></a>
+         
+        <h1>Daniel Mart&iacute;n Jimenez</h1>
+         
+        <img src="imagenes/mifoto.png" align="RIGHT" longdesc="Imagen de perfil"/>
+        <p class="nota">Se trata de mi p&aacute;gina personal. La informaci&oacute;n que aparece a continuaci&oacute;n
+                        muestra mi formaci&oacute;n acad&eacute;mica, ademas de mis datos de contacto. Si necesita
+                        ponerse en contacto conmigo puede hacerlo preferentemente a trav&eacute;s de mi correo
+                        electr&oacute;nico</p>
+        <br/>
+        <p class="cita">Esta p&aacute;gina se ha creado utilizando el editor de JDeveloper que permite verse la
+                        p&aacute;gina con diferentes configuraciones</p>
+        <h2>Datos Personales</h2>
+        <p>Aqui incluir&iacute;a mis datos personales</p>
+        <ul>
+            <li class="cuadrado">Apellidos: Martin Jimenez</li>
+            <li>Nombre: Daniel</li>
+            <li>Direcci&oacute;n: C/ Gallinato N&ordm;13</li>
+        </ul>
+        <h2>Formaci&oacute;n</h2>
+        <ul>
+            <li>Ingeniero inform&aacute;tico t&eacute;cnico de sistemas</li>
+            <li>
+                Estudiante de la 
+                <a href="http://www.informatica.us.es" target="_blank">Universidad de Sevilla</a>
+                 del 
+                <a href="http://www.lsi.us.es/experto">M&aacute;ster MWM</a>
+            </li>
+        </ul>
+        <table border="border">
+            <tr>
+                <th bgcolor="Green">Nombre del centro</th>
+                <th bgcolor="Green">Estudios realizados</th>
+                <th bgcolor="Green">A&ntilde;os</th>
+            </tr><tr>
+                <td>Colegio Portaceli</td>
+                <td>Bachillerato</td>
+                <td>2001-2003</td>
+            </tr><tr>
+                <td>Universidad de Sevilla</td>
+                <td>Ingenier&iacute;a T&eacute;cnica</td>
+                <td>2004-2008</td>
+            </tr>
+        </table>
+        <h2>Experiencia Laboral</h2>
+         
+        <h2>Ocio</h2>
+        <ul>
+            <li>F&uacute;tbol</li>
+            <li>P&aacute;del</li>
+            <li>
+                <a href="http://www.realbetisbalompie.es" target="_blank">Real Betis Balompie</a>
+            </li>
+        </ul>
+        <hr size="+14" width="80%" noshade="true"/>
+        <form name="formulario" action="procesaseleccion.jsp" method="post">
+            Introduzca su login:
+            <input type="text" name="login" maxlength="8"/>
+            <br/>
+            Introduzca su password:
+            <input type="password" name="password" maxlength="10"/>
+            <br/>
+            Seleccione un libro
+            <select name="libro">
+                <optgroup label="Programación">
+                    <option>Estructuras de datos</option>
+                    <option>Patrones de dise&ntilde;o</option>
+                    <option>Algoritmos de b&uacute;squeda y ordenaci&oacute;n</option>
+                </optgroup>
+                <optgroup label="Desarrollo Web">
+                    <option>Dise&ntilde;o Web</option>
+                    <option>HTML5</option>
+                </optgroup>
+            </select>
+        </form>
+         
+        <a href="#principio">Ir al principio</a>
+    </body>
+</html>

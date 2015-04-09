@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head>
+            <title>
+                #{msgs.registro}
+            </title>
+        </h:head>
+        <h:body>
+            <h2>#{msgs.cabecera}</h2>
+             
+            <h:form id="formulario">
+                <h:panelGrid columns="3">
+                    <h:outputLabel for="nombre" value="#{msgs.nombre}"/>
+                    <h:inputText id="nombre" value="#{beanRegistro.nombre}" required="true"
+                                 requiredMessage="#{msgs.errorCampoObligatorio}"/>
+                    <h:message for="nombre" style="color:Orange;"/>
+                    <h:outputLabel for="apellidos" value="#{msgs.apellidos}"/>
+                    <h:inputText id="apellidos" value="#{beanRegistro.apellidos}" required="true"
+                                 requiredMessage="#{msgs.errorCampoObligatorio}"/>
+                    <h:message for="apellidos" style="color:Orange;"/>
+                    <h:outputLabel for="sueldo" value="#{msgs.sueldo}"/>
+                    <h:inputText id="sueldo" value="#{beanRegistro.sueldo}" required="true"
+                                 requiredMessage="#{msgs.errorCampoObligatorio}"/>
+                    <h:message for="sueldo" style="color:Orange;"/>
+                    <h:outputLabel for="fecha" value="#{msgs.fecha}"/>
+                    <h:inputText value="#{beanRegistro.fecha}" id="fecha"
+                                 converterMessage="#{msgs.errorFormatoFecha}">
+                        <f:convertDateTime pattern="dd-MMM-yyyy"/>
+                    </h:inputText>
+                    <h:message for="fecha" style="color:Orange;"/>
+                    <h:commandButton value="#{msgs.botonEnviar}" action="#{beanRegistro.registrar}" type="submit"/>
+                    <h:commandButton value="#{msgs.botonBorrar}" type="reset"/>
+                </h:panelGrid>
+            </h:form>
+        </h:body>
+    </html>
+</f:view>

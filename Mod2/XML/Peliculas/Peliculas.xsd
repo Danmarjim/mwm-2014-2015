@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.example.org"
+            targetNamespace="http://www.example.org" elementFormDefault="qualified">
+  <xsd:simpleType name="tipoT">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="drama"/>
+      <xsd:enumeration value="comedia"/>
+      <xsd:enumeration value="misterio"/>
+      <xsd:enumeration value="terror"/>
+      <xsd:enumeration value="aventuras"/>
+      <xsd:enumeration value="ciencia-ficcion"/>
+      <xsd:enumeration value="documental"/>
+      <xsd:enumeration value="romantica"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="peliculaT">
+    <xsd:sequence>
+      <xsd:element name="titulo" type="xsd:string"/>
+      <xsd:element name="guionista" type="xsd:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xsd:element name="productor" type="xsd:string" maxOccurs="unbounded"/>
+      <xsd:element name="director" type="xsd:string"/>
+      <xsd:element name="actor" type="xsd:string" maxOccurs="unbounded" minOccurs="0"/>
+      <xsd:element name="comentarios" type="xsd:string" minOccurs="0"/>
+    </xsd:sequence>
+    <xsd:attribute name="tipo" type="tipoT"/>
+    <xsd:attribute name="año" type="xsd:integer"/>
+  </xsd:complexType>
+  <xsd:element name="peliculas">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="pelicula" type="peliculaT" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <title>Servlet con Sesion</title>
+    </head>
+    <body>
+        <div style="text-align:center;font-family:Arial;color:Blue;font-size:large;">
+            <b>Servlet que cuenta las conexiones hechas con sesiones</b>
+             
+            <br/>
+            <div style="color:Red;font-size:medium;">Se sigue el metodo POST</div>
+            <br/>
+             
+            <form action="cuentaconexionesconsesion" method="POST">
+                <div style="color:Black;font-size:medium;">
+                    Nombre del usuario: 
+                    <input type="text" name="NombreUsuario" width="30"/>
+                     
+                    <br/>
+                     
+                    <br/>
+                     
+                    <input type="submit" value="Enviar datos"/>
+                     
+                    <input type="reset" value="Limpiar datos"/>
+                     
+                    <br/>
+                     
+                    <br/>
+                     
+                    <a href="cuentaconexionesconsesion">Cerrar Sesion</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

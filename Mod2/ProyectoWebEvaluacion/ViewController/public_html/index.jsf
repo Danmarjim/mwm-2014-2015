@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head>
+            <title>
+                #{msg['gestor.tareas']}
+                #{msg['barra.vertical']}
+                #{msg['entrar']}
+            </title>
+        </h:head>
+        <h:body>
+            <h:form>
+                <h1>
+                    <h:outputText value="#{msg['login']}"/>
+                </h1>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{msg['usuario']}#{msg['dos.puntos']}" for="user"/>
+                    <h:inputText id="user" value="#{loginBean.usuario.username}" title="#{msg['usuario']}"
+                                 required="true" requiredMessage="#{msg['requerido.usuario']}"/>
+                    <h:outputLabel value="#{msg['contrasena']}#{msg['dos.puntos']}" for="password"/>
+                    <h:inputSecret id="password" value="#{loginBean.usuario.password}" title="#{msg['contrasena']}"
+                                   required="true" requiredMessage="#{msg['requerido.contrasena']}"/>
+                    <h:commandButton value="#{msg['entrar']}" action="#{loginBean.login}"/>
+                </h:panelGrid>
+            </h:form>
+             
+            <h:link value="#{msg['registrar.usuario']}" outcome="register"/>
+             
+            <h:messages style="color:red;margin:8px;" showDetail="true"/>
+        </h:body>
+    </html>
+</f:view>

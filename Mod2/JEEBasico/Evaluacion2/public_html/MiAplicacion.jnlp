@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<jnlp spec="1.0+" codebase="http://127.0.0.1:7101/" href="/JEEBasico-Evaluacion2-context-root/MiAplicacion.jnlp">
+   <information>
+      <title>My Application</title>
+      <vendor>My Company</vendor>
+      <description>My application description</description>
+   </information>
+   <resources>
+      <j2se version="1.4+"/>
+      <jar href="/JEEBasico-Evaluacion2-context-root/apps/MiAplicacion.jar" main="true" download="eager"/>
+   </resources>
+   <application-desc main-class="evaluacion2.MiAplicacion"/>
+</jnlp>

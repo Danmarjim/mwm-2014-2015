@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.example.org"
+            targetNamespace="http://www.example.org" elementFormDefault="qualified">
+  <xsd:simpleType name="tipoT">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:complexType name="incendioT">
+    <xsd:sequence>
+      <xsd:element name="localidad" type="xsd:string"/>
+      <xsd:element name="coordenadas" type="xsd:string"/>
+      <xsd:element name="magnitud" type="xsd:integer"/>
+      <xsd:element name="hectareasbosque" minOccurs="0" type="xsd:integer"/>
+      <xsd:element name="hectareasmatorral" type="xsd:integer" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="incendios">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="incendio" type="incendioT" minOccurs="0" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

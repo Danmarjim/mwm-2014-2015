@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <meta name="author" content="Daniel Martin Jimenez"/>
+        <title>Ejercicio 3</title>
+        <script lenguage="javascript">
+          function verificaEmail() {
+              var res = true;
+              email = document.formularioeje3.email.value;
+              if (email.indexOf('@', 0) ==  - 1 || email.indexOf('"', 0) !=  - 1 || email.indexOf(';', 0) !=  - 1 || email.indexOf('/', 0) !=  - 1 || email.indexOf('<', 0) !=  - 1 || email.indexOf('*', 0) !=  - 1 || email.indexOf(',', 0) !=  - 1 || email.indexOf('$', 0) !=  - 1 || email.indexOf(':', 0) !=  - 1 || email.indexOf('!', 0) !=  - 1 || email.indexOf('>', 0) !=  - 1 || email.indexOf('&', 0) !=  - 1) {
+                  alert("Incorrecta direccion de email: " + email + ", introduzca una direccion valida.");
+                  res = false;
+              }
+              if (res == false) {
+                  document.formularioeje3.email.focus();
+              }
+              return res;
+          }
+
+          function verificaLongitud() {
+              var res = true;
+              texto = document.formularioeje3.cualquiera.value;
+              if (texto.indexOf(' ', 0) !=  - 1) {
+                  alert("Escriba algun caracter");
+                  res = false;
+              }
+              else if (texto.length < 3) {
+                  alert("Escriba 3 caracteres como minimo");
+                  res = false;
+              }
+              else if (texto.length > 6) {
+                  alert("Escriba 6 caracteres como maximo");
+                  res = false;
+              }
+              else {
+                  res = true;
+              }
+              if (res == false) {
+                  document.formularioeje3.cualquiera.focus();
+              }
+              return res;
+          }
+
+          function verificaNumero() {
+              var res = true;
+              numero = document.formularioeje3.numero.value;
+              for (var i = 0;i < numero.length;i++) {
+                  var ch = numero.substring(i, i + 1);
+                  if (ch < "0") {
+                      alert("Escriba un valor numero positivo");
+                      res = false;
+                  }
+
+              }
+              if (res == false) {
+                  document.formularioeje3.numero.focus();
+              }
+              return res;
+          }
+        </script>
+    </head>
+    <body>
+        <h1>Comprobacion de formulario</h1>
+         
+        <form name="formularioeje3" action="enviarformulario.jsp" method="post">
+            Email:
+            <input type="email" name="email" onchange="verificaEmail()"/>
+            <br/>
+            <br/>
+            Al menos 3 caracteres:
+            <input type="text" name="cualquiera" onchange="verificaLongitud()"/>
+            <br/>
+            <br/>
+            Un valor numerico:
+            <input type="number" name="numero" onchange="verificaNumero()"/>
+            <br/>
+            <br/>
+            <input type="submit" name="enviar"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <Page
+      id="Page2">
+      <property
+         name="wildcard">false</property>
+      <property
+         name="y">103.59766</property>
+      <property
+         name="x">427.0</property>
+      <property
+         name="jspName">/registro.jsf</property>
+   </Page>
+   <Page
+      id="Page3">
+      <property
+         name="wildcard">false</property>
+      <property
+         name="y">328.89648</property>
+      <property
+         name="x">238.0</property>
+      <property
+         name="jspName">/normal.jsf</property>
+   </Page>
+   <Page
+      id="Page4">
+      <property
+         name="wildcard">false</property>
+      <property
+         name="y">349.89648</property>
+      <property
+         name="x">614.0</property>
+      <property
+         name="jspName">/vip.jsf</property>
+   </Page>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase5"
+      from="Page2"
+      to="Page3">
+      <property
+         name="fromOutcome">cualquiera</property>
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="sdm:polyPoints">B44,423.5,157.24707,238.0,274.5459,T50</property>
+   </NavigationCase>
+   <NavigationCase
+      islink="true"
+      id="NavigationCase6"
+      from="Page2"
+      to="Page4">
+      <property
+         name="fromOutcome">importante</property>
+      <property
+         name="description">Navigation Case</property>
+      <property
+         name="sdm:polyPoints">B56,430.5,157.24707,614.0,295.5459,T50</property>
+   </NavigationCase>
+</SDM>

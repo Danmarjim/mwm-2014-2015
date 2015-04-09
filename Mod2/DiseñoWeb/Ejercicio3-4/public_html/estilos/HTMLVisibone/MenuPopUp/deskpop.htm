@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>VisiBone Popups 1.0 / Desktop</title>
+<script language="javascript" type="text/javascript">
+     var htmlwin;
+     var colhwin;
+     var coldwin;
+     function popup(win,name,url)
+     {
+          win=window.open(url,name,'resizable=1');
+          win.creator=self;
+          win.focus();
+     }
+</script>
+</head>
+<body>
+
+<h4>VisiBone Popups 1.0 / Desktop</h4>
+
+<form><p>
+<input type="button" value="HTML Popup"
+     onClick="popup(htmlwin,'HTML_Popup','htmlpop.htm')" /><br>
+<input type="button" value="Hex Color Popup"
+     onClick="popup(colhwin,'ColorHex_Popup','colhpop.htm')" /><br>
+<input type="button" value="Decimal Color Popup"
+     onClick="popup(coldwin,'ColorDec_Popup','coldpop.htm')" /></p>
+</form>
+</body>
+</html>

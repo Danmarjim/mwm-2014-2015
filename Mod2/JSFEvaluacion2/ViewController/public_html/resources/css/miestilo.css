@@ -1,0 +1,17 @@
+@charset "windows-1252";
+
+body {
+    background-color: #FDF5E6;
+}
+
+a:hover {
+    color: Green;
+}
+
+.white {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+    text-decoration: none;
+}

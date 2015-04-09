@@ -1,0 +1,32 @@
+@charset "windows-1252";
+
+H1 {
+    color: Blue;
+    font-family: 'Times New Roman';
+    font-size: xx-large;
+    font-style: oblique;
+}
+
+H2 {
+    color: Red;
+    font-family: 'Courier New';
+    font-size: medium;
+    font-style: italic;
+}
+
+p.nota {
+    background-color: Fuchsia;
+    text-decoration: underline;
+    text-align: justify
+}
+
+p.cita {
+    text-indent: 2cm;
+    text-transform: uppercase;
+    font-style: oblique;
+    word-spacing: 0.4em;
+}
+
+li.cuadrado {
+    list-style-type: square
+}

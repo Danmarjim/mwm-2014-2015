@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <title>WWW.ALBUMES.COM</title>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <b>WWW.ALBUMES.COM</b>
+            </h1>
+        </header>
+         
+        <section>
+            <p>Imprimos en formato digital el pedido que realice.(solo para usuarios registrados)</p>
+            <form action="albumjps">
+                Login:
+                <input type="text" name="login" placeholder="Introduzca su email" required="required"
+                       autofocus="autofocus"/>
+                <br/>
+                Password:
+                <input type="password" name="contraseña" required="required" pattern="[A-Za-z]{3,10}"/>
+                <br/>
+                Eliga el tipo de celebracion para confeccionarle su album:
+                <input list="album" name="albumelejido" placeholder="Elija su album"/>
+                <datalist id="album">
+                    <option>Boda</option>
+                    <option>Comunion</option>
+                    <option>Cumplea&ntilde;os</option>
+                    <option>Comunion</option>
+                </datalist>
+                <br/>
+                Color elegido para la portada:
+                <input type="color" name="fondocolor"/>
+                <br/>
+                Fecha limite para recibir el album:
+                <input type="date" value="fecharecibir"/>
+                <br/>
+                Numero de albumes (minimo 3):
+                <input type="number" value="numeroalbumes" min="3"/>
+                <br/>
+                Numero de telefono contacto:
+                <input type="tel" value="telefono" required="required" autofocus="autofocus"/>
+                <br/>
+                Envienos las fotografias para el album:
+                <input type="file" value="fotos" multiple/>
+                <br/>
+                <button type="submit">Pulsa para enviar fotos</button>
+            </form>
+        </section>
+    </body>
+</html>

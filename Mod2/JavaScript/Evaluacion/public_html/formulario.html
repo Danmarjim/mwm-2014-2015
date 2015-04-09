@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <title>DISTRASA</title>
+        <link rel="stylesheet" media="screen" href="estilos/estilopropio.css" type="text/css"/>
+        <script lenguage="javascript" src="./scripts/evaluacion.js">
+        </script>
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="cabecera">
+                <a id="principio"></a>
+                 
+                <h1>Portal Web DISTRASA</h1>
+            </div>
+            <div id="menu">
+                <h2>Men&uacute;</h2>
+                <ul>
+                    <li>
+                        <a href="info.html">Informaci&oacute;n General</a>
+                    </li>
+                    <li>
+                        <a href="informatica.html">Inform&aacute;tica</a>
+                    </li>
+                    <li>
+                        <a href="textil.html">Textil</a>
+                    </li>
+                    <li>
+                        <a href="formulario.html">Pedido</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="contenido">
+                <h2>Pedido</h2>
+                 
+                <form name="formulario" method="post" action="pedidoenviado.html"
+                      onsubmit="return verificaFormulario()">
+                    Nombre:
+                    <input type="text" name="nombre" maxlength="8"/>
+                    <br/>
+                    <br/>
+                    Apellidos:
+                    <input type="text" name="apellidos" maxlength="20"/>
+                    <br/>
+                    <br/>
+                    Direccion:
+                    <input type="text" name="direccion" maxlength="50"/>
+                    <br/>
+                    <br/>
+                    Correo electr&oacute;nico (Obligatorio):
+                    <input type="email" name="correo"/>
+                    <br/>
+                    <br/>
+                    Tel&eacute;fono:
+                    <input type="text" name="telefono" maxlength="9"/>
+                    <br/>
+                    <br/>
+                    <h4>Lista de compra:</h4>
+                    Producto:
+                    <input type="text" name="producto"/>
+                    Cantidad:
+                    <input type="text" name="cantidad"/>
+                    Hora de entrega:
+                    <input type="text" name="fecha"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input type="text" name="producto[2]"/>
+                    Cantidad:
+                    <input type="text" name="cantidad"/>
+                    Hora de entrega:
+                    <input type="text" name="fecha2"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input type="text" name="producto[3]"/>
+                    Cantidad:
+                    <input type="text" name="cantidad"/>
+                    Hora de entrega:
+                    <input type="text" name="fecha3"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input type="text" name="producto[4]"/>
+                    Cantidad:
+                    <input type="text" name="cantidad"/>
+                    Hora de entrega:
+                    <input type="text" name="fecha4"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input type="text" name="producto[5]"/>
+                    Cantidad:
+                    <input type="text" name="cantidad"/>
+                    Hora de entrega:
+                    <input type="text" name="fecha5"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input type="text" name="producto[6]"/>
+                    Cantidad:
+                    <input type="text" name="cantidad"/>
+                    Hora de entrega:
+                    <input type="text" name="fecha6"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input type="text" name="producto[7]"/>
+                    Cantidad:
+                    <input type="text" name="cantidad"/>
+                    Hora de entrega:
+                    <input type="text" name="fecha7"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input type="text" name="producto[8]"/>
+                    Cantidad:
+                    <input type="text" name="cantidad"/>
+                    Hora de entrega:
+                    <input type="text" name="fecha8"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input type="text" name="producto[9]"/>
+                    Cantidad:
+                    <input type="text" name="cantidad"/>
+                    Hora de entrega:
+                    <input type="text" name="fecha9"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input type="text" name="producto[10]"/>
+                    Cantidad:
+                    <input type="text" name="cantidad"/>
+                    Hora de entrega:
+                    <input type="text" name="fecha10"/>
+                    <br/>
+                    <br/>
+                    <input type="reset" value="Borrar"/>
+                    <input type="submit" value="Enviar"/>
+                    <br/>
+                    <br/>
+                </form>
+            </div>
+            <div id="pie">
+                <script type="text/javascript" action="mostrarFecha()">
+                </script> 
+            </div>
+        </div>
+    </body>
+</html>

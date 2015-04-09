@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <title>Ocultar y Mostrar parrafos</title>
+        <link rel="stylesheet" href="estilos/estilo.css" type="text/css" />
+        <script type="text/javascript" src="scripts/ocultar.js">
+        </script>
+        <body>
+            <div id="primero">
+            <p>AJAX genera un nuevo modo de trabajo que genera nuevos tipos de errores y de excepciones. El mas
+               com&uacute;n es hacer una petici&oacute;n as&iacute;ncrona al servidor y que se tarde tiempo en
+               responder. Sel: utilizar la funci&oacute;n timeout</p>   
+            <span onclick="ocultarParrafo('primero')">Ocultar p&aacute;rrafo</span>
+            </div>
+            <div id="elementoPrimero">
+            <span onclick="mostrarParrafo('elementoPrimero')">Mostrar p&aacute;rrafo</span>
+            </div>  
+            <div id="segundo">
+            <p>Para mejorar el rendimiento de aplicaciones web complejas concatenar en un solo fichero todos los
+               ficheros javaScript y comprimir el c&oacute;digo javaScript, eliminando espacios en blanco sobrantes,
+               comentarios, incluso algunos sustituyen los nombres de variables por otros m&aacute;s cortos. El
+               resultado es una sola l&iacute;nea de c&oacute;digo.</p>
+            <span onclick="ocultarParrafo('segundo')">Ocultar p&aacute;rrafo</span>
+            </div>
+            <div id="elementoSegundo">
+            <span onclick="mostrarParrafo('elementoSegundo')">Mostrar p&aacute;rrafo</span>
+            </div>
+            <div id="tercero">
+            <p>Para evitar que el c&oacute;digo sea copiado, hay herramientas para ocultar el c&oacute;digo: Jasob</p>
+            <span onclick="ocultarParrafo('tercero')">Ocultar p&aacute;rrafo</span>
+            </div>
+            <div id="elementoTercero">
+            <span onclick="mostrarParrafo('elementoTercero')">Mostrar p&aacute;rrafo</span>
+            </div>
+            
+        </body>
+    </head>
+</html>

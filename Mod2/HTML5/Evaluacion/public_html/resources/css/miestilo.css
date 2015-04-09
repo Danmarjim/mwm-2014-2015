@@ -1,0 +1,27 @@
+@charset "windows-1252";
+
+#cabecera {
+    background: Silver;
+}
+
+#lateral {
+    float: left;
+    width: 15%;
+}
+
+#contenido {
+    float: left;
+    width: 85%;
+}
+
+#pie {
+    clear: both;
+    background: Silver;
+}
+
+h1 {
+    color: Blue;
+    font-family: 'Times New Roman';
+    font-size: xx-large;
+    font-style: oblique;
+}

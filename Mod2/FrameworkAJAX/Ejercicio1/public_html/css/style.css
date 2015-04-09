@@ -1,0 +1,27 @@
+@charset "windows-1252";
+
+#grande {
+    border: 1px solid black;
+    height: 400px;
+    width: 550px;
+    padding: 1rem;
+}
+
+.miniaturas img {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    padding: 0.36rem;
+}
+
+.miniaturas img:hover {
+    border-color: red;
+}
+
+nav li {
+    width: 5rem;
+    list-style-type: none;
+    padding: 0.3rem;
+    border: 1px solid black;
+    margin: -1px;
+}

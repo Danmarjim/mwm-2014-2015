@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <title>DISTRASA</title>
+        <link rel="stylesheet" href="estilos/miestilo.css"/>
+        <script src="scripts/evaluacion.jps"></script>
+    </head>
+    <body>
+        <header id="cabecera">
+            <h1 class="titulo">Portal Web DISTRASA</h1>
+        </header>
+         
+        <aside id="lateral">
+            <h2>Men&uacute;</h2>
+            <ul>
+                <li>
+                    <a href="info.html">Informaci&oacute;n General</a>
+                </li>
+                <li>
+                    <a href="informatica.html">Inform&aacute;tica</a>
+                </li>
+                <li>
+                    <a href="textil.html">Textil</a>
+                </li>
+                <li>
+                    <a href="formulario.html">Pedido</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </aside>
+         
+        <section id="contenido">
+            <article>
+                <h2>Pedido</h2>
+                <form name="formulario" method="POST" action="pedidoenviado.html"
+                      onsubmit="return verificaFormulario()">
+                    Nombre:
+                    <input type="text" name="nombre" maxlength="10" required="required" autofocus="autofocus"/>
+                    <br/>
+                    <br/>
+                    Apellidos:
+                    <input type="text" name="nombre" maxlength="30"/>
+                    <br/>
+                    <br/>
+                    Direccion:
+                    <input type="text" name="direccion" maxlength="50"/>
+                    <br/>
+                    <br/>
+                    Correo electr&oacute;nico (Obligatorio):
+                    <input type="email" name="correo" required="required" autofocus="autofocus"/>
+                    <br/>
+                    <br/>
+                    Tel&eacute;fono:
+                    <input type="tel" name="telefono" maxlength="9" required="required" autofocus="autofocus"/>
+                    <br/>
+                    <br/>
+                    <h4>Lista de compra:</h4>
+                    Producto:
+                    <input list="producto" name="elijeproducto" placeholder="Eliga su producto"/>
+                    <datalist id="producto">
+                        <option>i01</option>
+                        <option>i02</option>
+                        <option>i03</option>
+                        <option>i04</option>
+                        <option>i05</option>
+                        <option>i06</option>
+                        <option>i07</option>
+                        <option>i08</option>
+                        <option>i09</option>
+                        <option>i10</option>
+                        <option>i11</option>
+                        <option>i12</option>
+                        <option>i13</option>
+                        <option>i14</option>
+                        <option>i15</option>
+                        <option>t01</option>
+                        <option>t02</option>
+                        <option>t03</option>
+                        <option>t04</option>
+                        <option>t05</option>
+                        <option>t06</option>
+                        <option>t07</option>
+                        <option>t08</option>
+                        <option>t09</option>
+                        <option>t10</option>
+                    </datalist>
+                    Cantidad:
+                    <input type="number" name="cantidad" maxlength="2" min="0"/>
+                    Hora de entrega:
+                    <input type="date" name="fecha"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input list="producto" name="elijeproducto" placeholder="Eliga su producto"/>
+                    <datalist id="producto">
+                        <option>i01</option>
+                        <option>i02</option>
+                        <option>i03</option>
+                        <option>i04</option>
+                        <option>i05</option>
+                        <option>i06</option>
+                        <option>i07</option>
+                        <option>i08</option>
+                        <option>i09</option>
+                        <option>i10</option>
+                        <option>i11</option>
+                        <option>i12</option>
+                        <option>i13</option>
+                        <option>i14</option>
+                        <option>i15</option>
+                        <option>t01</option>
+                        <option>t02</option>
+                        <option>t03</option>
+                        <option>t04</option>
+                        <option>t05</option>
+                        <option>t06</option>
+                        <option>t07</option>
+                        <option>t08</option>
+                        <option>t09</option>
+                        <option>t10</option>
+                    </datalist>
+                    Cantidad:
+                    <input type="number" name="cantidad" maxlength="2" min="0"/>
+                    Hora de entrega:
+                    <input type="date" name="fecha"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input list="producto" name="elijeproducto" placeholder="Eliga su producto"/>
+                    <datalist id="producto">
+                        <option>i01</option>
+                        <option>i02</option>
+                        <option>i03</option>
+                        <option>i04</option>
+                        <option>i05</option>
+                        <option>i06</option>
+                        <option>i07</option>
+                        <option>i08</option>
+                        <option>i09</option>
+                        <option>i10</option>
+                        <option>i11</option>
+                        <option>i12</option>
+                        <option>i13</option>
+                        <option>i14</option>
+                        <option>i15</option>
+                        <option>t01</option>
+                        <option>t02</option>
+                        <option>t03</option>
+                        <option>t04</option>
+                        <option>t05</option>
+                        <option>t06</option>
+                        <option>t07</option>
+                        <option>t08</option>
+                        <option>t09</option>
+                        <option>t10</option>
+                    </datalist>
+                    Cantidad:
+                    <input type="number" name="cantidad" maxlength="2" min="0"/>
+                    Hora de entrega:
+                    <input type="date" name="fecha"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input list="producto" name="elijeproducto" placeholder="Eliga su producto"/>
+                    <datalist id="producto">
+                        <option>i01</option>
+                        <option>i02</option>
+                        <option>i03</option>
+                        <option>i04</option>
+                        <option>i05</option>
+                        <option>i06</option>
+                        <option>i07</option>
+                        <option>i08</option>
+                        <option>i09</option>
+                        <option>i10</option>
+                        <option>i11</option>
+                        <option>i12</option>
+                        <option>i13</option>
+                        <option>i14</option>
+                        <option>i15</option>
+                        <option>t01</option>
+                        <option>t02</option>
+                        <option>t03</option>
+                        <option>t04</option>
+                        <option>t05</option>
+                        <option>t06</option>
+                        <option>t07</option>
+                        <option>t08</option>
+                        <option>t09</option>
+                        <option>t10</option>
+                    </datalist>
+                    Cantidad:
+                    <input type="number" name="cantidad" maxlength="2" min="0"/>
+                    Hora de entrega:
+                    <input type="date" name="fecha"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input list="producto" name="elijeproducto" placeholder="Eliga su producto"/>
+                    <datalist id="producto">
+                        <option>i01</option>
+                        <option>i02</option>
+                        <option>i03</option>
+                        <option>i04</option>
+                        <option>i05</option>
+                        <option>i06</option>
+                        <option>i07</option>
+                        <option>i08</option>
+                        <option>i09</option>
+                        <option>i10</option>
+                        <option>i11</option>
+                        <option>i12</option>
+                        <option>i13</option>
+                        <option>i14</option>
+                        <option>i15</option>
+                        <option>t01</option>
+                        <option>t02</option>
+                        <option>t03</option>
+                        <option>t04</option>
+                        <option>t05</option>
+                        <option>t06</option>
+                        <option>t07</option>
+                        <option>t08</option>
+                        <option>t09</option>
+                        <option>t10</option>
+                    </datalist>
+                    Cantidad:
+                    <input type="number" name="cantidad" maxlength="2" min="0"/>
+                    Hora de entrega:
+                    <input type="date" name="fecha"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input list="producto" name="elijeproducto" placeholder="Eliga su producto"/>
+                    <datalist id="producto">
+                        <option>i01</option>
+                        <option>i02</option>
+                        <option>i03</option>
+                        <option>i04</option>
+                        <option>i05</option>
+                        <option>i06</option>
+                        <option>i07</option>
+                        <option>i08</option>
+                        <option>i09</option>
+                        <option>i10</option>
+                        <option>i11</option>
+                        <option>i12</option>
+                        <option>i13</option>
+                        <option>i14</option>
+                        <option>i15</option>
+                        <option>t01</option>
+                        <option>t02</option>
+                        <option>t03</option>
+                        <option>t04</option>
+                        <option>t05</option>
+                        <option>t06</option>
+                        <option>t07</option>
+                        <option>t08</option>
+                        <option>t09</option>
+                        <option>t10</option>
+                    </datalist>
+                    Cantidad:
+                    <input type="number" name="cantidad" maxlength="2" min="0"/>
+                    Hora de entrega:
+                    <input type="date" name="fecha"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input list="producto" name="elijeproducto" placeholder="Eliga su producto"/>
+                    <datalist id="producto">
+                        <option>i01</option>
+                        <option>i02</option>
+                        <option>i03</option>
+                        <option>i04</option>
+                        <option>i05</option>
+                        <option>i06</option>
+                        <option>i07</option>
+                        <option>i08</option>
+                        <option>i09</option>
+                        <option>i10</option>
+                        <option>i11</option>
+                        <option>i12</option>
+                        <option>i13</option>
+                        <option>i14</option>
+                        <option>i15</option>
+                        <option>t01</option>
+                        <option>t02</option>
+                        <option>t03</option>
+                        <option>t04</option>
+                        <option>t05</option>
+                        <option>t06</option>
+                        <option>t07</option>
+                        <option>t08</option>
+                        <option>t09</option>
+                        <option>t10</option>
+                    </datalist>
+                    Cantidad:
+                    <input type="number" name="cantidad" maxlength="2" min="0"/>
+                    Hora de entrega:
+                    <input type="date" name="fecha"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input list="producto" name="elijeproducto" placeholder="Eliga su producto"/>
+                    <datalist id="producto">
+                        <option>i01</option>
+                        <option>i02</option>
+                        <option>i03</option>
+                        <option>i04</option>
+                        <option>i05</option>
+                        <option>i06</option>
+                        <option>i07</option>
+                        <option>i08</option>
+                        <option>i09</option>
+                        <option>i10</option>
+                        <option>i11</option>
+                        <option>i12</option>
+                        <option>i13</option>
+                        <option>i14</option>
+                        <option>i15</option>
+                        <option>t01</option>
+                        <option>t02</option>
+                        <option>t03</option>
+                        <option>t04</option>
+                        <option>t05</option>
+                        <option>t06</option>
+                        <option>t07</option>
+                        <option>t08</option>
+                        <option>t09</option>
+                        <option>t10</option>
+                    </datalist>
+                    Cantidad:
+                    <input type="number" name="cantidad" maxlength="2" min="0"/>
+                    Hora de entrega:
+                    <input type="date" name="fecha"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input list="producto" name="elijeproducto" placeholder="Eliga su producto"/>
+                    <datalist id="producto">
+                        <option>i01</option>
+                        <option>i02</option>
+                        <option>i03</option>
+                        <option>i04</option>
+                        <option>i05</option>
+                        <option>i06</option>
+                        <option>i07</option>
+                        <option>i08</option>
+                        <option>i09</option>
+                        <option>i10</option>
+                        <option>i11</option>
+                        <option>i12</option>
+                        <option>i13</option>
+                        <option>i14</option>
+                        <option>i15</option>
+                        <option>t01</option>
+                        <option>t02</option>
+                        <option>t03</option>
+                        <option>t04</option>
+                        <option>t05</option>
+                        <option>t06</option>
+                        <option>t07</option>
+                        <option>t08</option>
+                        <option>t09</option>
+                        <option>t10</option>
+                    </datalist>
+                    Cantidad:
+                    <input type="number" name="cantidad" maxlength="2" min="0"/>
+                    Hora de entrega:
+                    <input type="date" name="fecha"/>
+                    <br/>
+                    <br/>
+                    Producto:
+                    <input list="producto" name="elijeproducto" placeholder="Eliga su producto"/>
+                    <datalist id="producto">
+                        <option>i01</option>
+                        <option>i02</option>
+                        <option>i03</option>
+                        <option>i04</option>
+                        <option>i05</option>
+                        <option>i06</option>
+                        <option>i07</option>
+                        <option>i08</option>
+                        <option>i09</option>
+                        <option>i10</option>
+                        <option>i11</option>
+                        <option>i12</option>
+                        <option>i13</option>
+                        <option>i14</option>
+                        <option>i15</option>
+                        <option>t01</option>
+                        <option>t02</option>
+                        <option>t03</option>
+                        <option>t04</option>
+                        <option>t05</option>
+                        <option>t06</option>
+                        <option>t07</option>
+                        <option>t08</option>
+                        <option>t09</option>
+                        <option>t10</option>
+                    </datalist>
+                    Cantidad:
+                    <input type="number" name="cantidad" maxlength="2" min="0"/>
+                    Hora de entrega:
+                    <input type="date" name="fecha"/>
+                    <br/>
+                    <br/>
+                    <button type="reset">Borrar informaci&oacute;n</button>
+                    <button type="submit">Enviar pedido</button>
+                </form>
+            </article>
+        </section>
+         
+        <footer id="pie">
+            <script type="text/javascript">
+                  var d = new Date();
+                  document.write('Hora actual: ' + d.getHours(), ':' + d.getMinutes());
+                </script>
+        </footer>
+    </body>
+</html>

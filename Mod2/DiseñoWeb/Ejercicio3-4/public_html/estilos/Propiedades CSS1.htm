@@ -1,0 +1,2434 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0060)http://www.htmlhelp.com/es/reference/css/all-properties.html -->
+<HTML lang=es><HEAD><TITLE>Propiedades CSS1</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1"><LINK 
+rev=Made href="mailto:liam@htmlhelp.com"><LINK href="./" rel=Start><LINK 
+href="properties.html" rel=Up><LINK href="/glossary/glossary.html" 
+rel=Glossary><LINK href="/copyright.html" rel=Copyright><LINK 
+href="Propiedades CSS1_archivos/style.css" type=text/css rel=StyleSheet><LINK 
+media=aural href="Propiedades CSS1_archivos/aural.css" type=text/css 
+rel=StyleSheet>
+<META content="John Pozadzides/Liam Quinn" name=author>
+<META 
+content="Una descripción de todas las propiedades de Hojas de estilo en cascada, nivel 1." 
+name=description>
+<META 
+content="creación de documentos html, grupos de noticias, web design group, diseño de páginas web, ayuda, preguntas más frecuentes, ayuda internet, creación de sitios, creación de páginas, diseño de sitios, diseño de páginas, esquema de sitio, esquema de página, html, lenguaje de marcación de hipertexto, preguntas, gráficos, validación, validadores, páginas www, html 3.2, wilbur, archivos de ayuda, tutores, artículos, material de referencia, guía, wdg, estilo, hoja de estilos, css, hojas de estilo en cascada, propiedades, respuesta" 
+name=keywords>
+<META http-equiv=Content-Style-Type content=text/css>
+<META content="MSHTML 6.00.2722.900" name=GENERATOR></HEAD>
+<BODY text=#000000 vLink=#800080 aLink=#000080 link=#0000ff bgColor=#ffffff>
+<H2><IMG height=83 alt="Acerca del Web Design Group" 
+src="Propiedades CSS1_archivos/wdglogo1.gif" width=250></H2>
+<H1 align=center>Propiedades CSS1<IMG height=73 alt="" hspace=5 
+src="Propiedades CSS1_archivos/css.gif" width=99 align=right></H1>
+<HR>
+
+<UL>
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#syntax">Sintaxis 
+  usada en definición de propiedades</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#font-properties">Propiedades 
+  de fuentes</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#color-background">Propiedades 
+  de color y fondo</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#text">Propiedades 
+  de texto</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#box">Propiedades 
+  de cuadros</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#classification">Clasificación 
+  de propiedades</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#units">Unidades</A> 
+  </LI></UL>
+<HR align=center width="88%">
+
+<H2><A name=syntax>Sintaxis usada en definición de propiedades</A></H2>
+<DL>
+  <DT>&lt;Foo&gt; 
+  <DD>Valor de tipo Foo. Los tipos comunes se discuten en la sección <A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#units">Unidades</A>. 
+
+  <DT>Foo 
+  <DD>Palabra clave que debe aparecer literalmente (aunque se distinguen 
+  mayúsculas de minúsculas). Las comas y barras diagonales también deben 
+  aparecer literalmente. 
+  <DT>A B C 
+  <DD>A debe ocurrir, luego B, luego C, en ese orden. 
+  <DT>A | B 
+  <DD>A o B deben ocurrir. 
+  <DT>A || B 
+  <DD>A or B o ambos deben ocurrir, en cualquier orden. 
+  <DT>[ Foo ] 
+  <DD>Los corchetes se usan para agrupar ítems. 
+  <DT>Foo* 
+  <DD>Foo se repite cero o más veces. 
+  <DT>Foo+ 
+  <DD>Foo se repite una o más veces. 
+  <DT>Foo? 
+  <DD>Foo es opcional. 
+  <DT>Foo{A,B} 
+  <DD>Foo debe ocurrir al menos A veces y a lo sumo B veces. </DD></DL>
+<HR align=center width="88%">
+
+<H2><A name=font-properties>Propiedades de fuentes</A></H2>
+<UL>
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#font-family">Font 
+  Family (Familia de fuente)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#font-style">Font 
+  Style (Estilo de fuente)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#font-variant">Font 
+  Variant (Variante de fuente )</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#font-weight">Font 
+  Weight (Peso de fuente)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#font-size">Font 
+  Size (Tamaño de fuente)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#font">Font 
+  (Fuente)</A> </LI></UL>
+<HR align=center width="77%">
+
+<H3><A name=font-family>Font Family (Familia de fuente)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>font-family: [[&lt;nombre-de-familia&gt; | 
+      &lt;familia-genérica&gt;],]* [&lt;nombre-de-familia&gt; | 
+      &lt;familia-genérica&gt;]<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>&lt;nombre-de-familia&gt;
+      <UL>
+        <LI>Puede usarse cualquier nombre de familia de 
+      fuentes</LI></UL>&lt;familia-genérica&gt;
+      <UL>
+        <LI><STRONG class=css><SPAN 
+        style="FONT-FAMILY: serif">serif</SPAN></STRONG> (<I>por ej.,</I> <SPAN 
+        style="FONT-FAMILY: Times">Times</SPAN>) 
+        <LI><STRONG class=css><SPAN 
+        style="FONT-FAMILY: sans-serif">sans-serif</SPAN></STRONG> (<I>por 
+        ej.,</I> <SPAN style="FONT-FAMILY: Arial">Arial</SPAN> o <SPAN 
+        style="FONT-FAMILY: Helvetica">Helvetica</SPAN>) 
+        <LI><STRONG class=css><SPAN 
+        style="FONT-FAMILY: cursive">cursive</SPAN></STRONG> (<I>por ej.,</I> 
+        <SPAN style="FONT-FAMILY: Zapf-Chancery">Zapf-Chancery</SPAN>) 
+        <LI><STRONG class=css><SPAN 
+        style="FONT-FAMILY: fantasy">fantasy</SPAN></STRONG> (<I>por ej.,</I> 
+        <SPAN style="FONT-FAMILY: Western">Western</SPAN>) 
+        <LI><STRONG class=css><SPAN 
+        style="FONT-FAMILY: monospace">monospace</SPAN></STRONG> (<I>por 
+        ej.,</I> <SPAN style="FONT-FAMILY: Courier">Courier</SPAN>) 
+  </LI></UL></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>Determinado por el navegador<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>Las familias de fuentes pueden asignarse por un nombre de fuente específica o 
+por una familia de fuentes genérica. Obviamente, si define una fuente 
+específica, no será tan probable de encontrar como una familia de fuente 
+genérica. Puede hacer múltiples asignaciones de familias, y si hace una 
+asignación de fuente específica, debería ser seguida por un nombre de familia 
+genérica en el caso de que la primera selección no se halle presente.</P>
+<P>Una muestra de declaración de <STRONG class=css>font-family</STRONG> podría 
+ser así:</P><PRE><CODE class=css>P { font-family: "New Century Schoolbook", Times, serif }</CODE></PRE>
+<P>Note que las dos primeras asignaciones son fuentes de tipo específico: <SPAN 
+style="FONT-FAMILY: 'New Century Schoolbook'">New Century Schoolbook </SPAN>y 
+<SPAN style="FONT-FAMILY: Times">Times</SPAN>. Sin embargo, ya que ambas son 
+fuentes <STRONG class=css><SPAN 
+style="FONT-FAMILY: serif">serif</SPAN></STRONG>, la familia genérica está 
+listada como un respaldo en el caso de que el sistema no tenga ninguna de las 
+dos, sino otra fuente <STRONG class=css><SPAN 
+style="FONT-FAMILY: serif">serif</SPAN></STRONG> que cumpla los requisitos.</P>
+<P>Cualquier nombre de fuente que contenga un espacio en blanco deberá ser 
+entrecomillada, con comillas simples o dobles.</P>
+<P>La familia de fuente también puede darse con la propiedad <STRONG 
+class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#font">font</A></STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=font-style>Font Style (Estilo de fuente)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>font-style: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><SPAN style="FONT-STYLE: normal">normal</SPAN> | <SPAN 
+      style="FONT-STYLE: italic">italic</SPAN> | <SPAN 
+      style="FONT-STYLE: oblique">oblique</SPAN><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top><SPAN style="FONT-STYLE: normal">normal</SPAN><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad<STRONG class=css> font-style</STRONG> define que la fuente se 
+muestre en una de tres formas: <STRONG class=css><SPAN 
+style="FONT-STYLE: normal">normal</SPAN></STRONG>, <STRONG class=css><SPAN 
+style="FONT-STYLE: italic">itálica</SPAN></STRONG> u <STRONG class=css><SPAN 
+style="FONT-STYLE: oblique">oblicua</SPAN></STRONG> (inclinada). Una hoja de 
+estilo de muestra con declaraciones <STRONG class=css>font-style</STRONG> podría 
+ser así:</P><PRE><CODE class=css>H1 { font-style: oblique }
+P  { font-style: normal }</CODE></PRE>
+<HR align=center width="67%">
+
+<H3><A name=font-variant>Font Variant (Variante de fuente )</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>font-variant: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><SPAN style="FONT-VARIANT: normal">normal</SPAN> | <SPAN 
+      style="FONT-VARIANT: small-caps">small-caps</SPAN><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top><SPAN style="FONT-VARIANT: normal">normal</SPAN><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>font-variant</STRONG> determina si la fuente 
+se muestra en mayúsculas tipo <STRONG class=css><SPAN 
+style="FONT-VARIANT: normal">normal</SPAN></STRONG> o pequeñas <STRONG 
+class=css><SPAN style="FONT-VARIANT: small-caps">small-caps</SPAN></STRONG>. Las 
+small-caps se muestran cuando todas las letras de la palabra están en 
+mayúsculas, con caracteres ligeramente más grandes que las minúsculas. 
+Posteriores versiones de CSS pueden soportar variantes adicionales como 
+condensada, expandida, números en small-caps u otras variantes personalizadas. 
+Un ejemplo de una asignación font-variant sería:</P><PRE><CODE class=css>SPAN { font-variant: small-caps }</CODE></PRE>
+<HR align=center width="67%">
+
+<H3><A name=font-weight>Font Weight (Peso de fuente)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>font-weight: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><SPAN style="FONT-WEIGHT: normal">normal</SPAN> | <SPAN 
+      style="FONT-WEIGHT: bold">bold</SPAN> | <SPAN 
+      style="FONT-WEIGHT: bolder">bolder</SPAN> | <SPAN 
+      style="FONT-WEIGHT: lighter">lighter</SPAN> | <SPAN 
+      style="FONT-WEIGHT: 100">100</SPAN> | <SPAN 
+      style="FONT-WEIGHT: 200">200</SPAN> | <SPAN 
+      style="FONT-WEIGHT: 300">300</SPAN> | <SPAN 
+      style="FONT-WEIGHT: 400">400</SPAN> | <SPAN 
+      style="FONT-WEIGHT: 500">500</SPAN> | <SPAN 
+      style="FONT-WEIGHT: 600">600</SPAN> | <SPAN 
+      style="FONT-WEIGHT: 700">700</SPAN> | <SPAN 
+      style="FONT-WEIGHT: 800">800</SPAN> | <SPAN 
+      style="FONT-WEIGHT: 900">900</SPAN><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top><SPAN style="FONT-WEIGHT: normal">normal</SPAN><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>font-weight</STRONG> se usa para especificar 
+el peso de la fuente. Los valores <STRONG class=css><SPAN 
+style="FONT-WEIGHT: bolder">bolder</SPAN></STRONG> y <STRONG class=css><SPAN 
+style="FONT-WEIGHT: lighter">lighter</SPAN></STRONG> son relativos al peso de la 
+fuente heredada, mientras que los otros valores son pesos de fuente 
+absolutos.</P>
+<DIV class=note>
+<P>Nota: Ya que no todas las fuentes tienen nueve posibles pesos de 
+visualización, algunos de los pesos pueden agruparse en la asignación. Si el 
+peso especificado no está disponible, se elegirá una alternativa sobre la base 
+siguiente:</P>
+<UL>
+  <LI><STRONG class=css><SPAN style="FONT-WEIGHT: 500">500</SPAN></STRONG> puede 
+  ser cambiado con <STRONG class=css><SPAN 
+  style="FONT-WEIGHT: 400">400</SPAN></STRONG>, y viceversa 
+  <LI><STRONG class=css><SPAN 
+  style="FONT-WEIGHT: 100">100</SPAN></STRONG>-<STRONG class=css><SPAN 
+  style="FONT-WEIGHT: 300">300</SPAN></STRONG> puede ser asignado al siguiente 
+  peso más ligero, si existe, o en caso contrario, al siguiente más oscuro 
+  <LI><STRONG class=css><SPAN 
+  style="FONT-WEIGHT: 600">600</SPAN></STRONG>-<STRONG class=css><SPAN 
+  style="FONT-WEIGHT: 900">900</SPAN></STRONG> puede ser asignado al siguiente 
+  peso más oscuro, si existe, o en caso contrario, al siguiente más claro 
+</LI></UL></DIV>
+<P>Algunos ejemplos de asignación de <STRONG class=css>font-weight</STRONG> 
+serían:</P><PRE><CODE class=css>H1 { font-weight: 800 }
+P  { font-weight: normal }</CODE></PRE>
+<HR align=center width="67%">
+
+<H3><A name=font-size>Font Size (Tamaño de fuente)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>font-size: &lt;tamaño-absoluto&gt; | 
+      &lt;tamaño-relativo&gt; | &lt;longitud&gt; | &lt;porcentaje&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>
+      <UL>
+        <LI>&lt;tamaño-absoluto&gt; 
+        <UL>
+          <LI><SPAN style="FONT-SIZE: xx-small">xx-small</SPAN> | <SPAN 
+          style="FONT-SIZE: x-small">x-small</SPAN> | <SPAN 
+          style="FONT-SIZE: small">small</SPAN> | <SPAN 
+          style="FONT-SIZE: medium">medium</SPAN> | <SPAN 
+          style="FONT-SIZE: large">large</SPAN> | <SPAN 
+          style="FONT-SIZE: x-large">x-large</SPAN> | <SPAN 
+          style="FONT-SIZE: xx-large">xx-large</SPAN></LI></UL>
+        <LI>&lt;tamaño-relativo&gt; 
+        <UL>
+          <LI><SPAN style="FONT-SIZE: larger">larger</SPAN> | <SPAN 
+          style="FONT-SIZE: smaller">smaller</SPAN></LI></UL>
+        <LI><A 
+        href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A> 
+
+        <LI>&lt;<A 
+        href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">porcentaje</A>&gt; 
+        (en relación al elemento padre) </LI></UL><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top><SPAN style="FONT-SIZE: medium">medium</SPAN><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>font-size</STRONG> se usa para modificar el 
+tamaño de la fuente mostrada. Las longitudes absolutas (usando unidades como 
+<STRONG class=css>pt</STRONG> e <STRONG class=css>in</STRONG>) deberían usarse 
+racionalmente debido a su poca capacidad de adaptarse a diferentes ambientes de 
+navegación. Las fuentes con longitudes absolutas pueden ser muy pequeñas o 
+grandes para un usuario.</P>
+<P>Algunos ejemplos de asignación de tamaño serían:</P><PRE><CODE class=css>H1    { font-size: large }
+P      { font-size: 12pt }
+LI     { font-size: 90% }
+STRONG { font-size: larger }</CODE></PRE>
+<DIV class=note>
+<P>Los autores deben estar concientes de que <A 
+href="http://www.microsoft.com/ie/">Microsoft Internet Explorer</A> 3.x aplica 
+incorrectamente las unidades <STRONG class=css>em</STRONG> y <STRONG 
+class=css>ex</STRONG> como pixels, lo que puede hacer el texto ilegible. El 
+navegador también aplica incorrectamente valores de porcentaje relativos al 
+tamaño de fuente por defecto para el selector, en vez de en relación al tamaño 
+de fuente del elemento padre. Esto hace que reglas como:</P><PRE><CODE class=css>H1 { font-size: 200% }</CODE></PRE>
+<P>sean peligrosas, por que el tamaño será dos veces el tamaño de la fuente por 
+defecto de IE para encabezados de nivel-uno, en lugar de dos veces el tamaño de 
+fuente del elemento padre. En este caso, <STRONG class=html>BODY</STRONG> sería 
+muy probablemente el elemento padre, y definiría posoblemente un tamaño de 
+fuente <STRONG class=css>medium</STRONG>, mientras que el tamaño de fuente para 
+el encabezado de nivel uno aplicado por IE probablemente sería considerado 
+<STRONG class=css>xx-large</STRONG>.</P>
+<P>Considerando estos defectos, los autores deberían tener cuidado al usar 
+valores de porcentaje para <STRONG class=css>font-size</STRONG>, y probablemente 
+deberían evitar unidades <STRONG class=css>em</STRONG> y <STRONG 
+class=css>ex</STRONG> para esta propiedad.</P></DIV>
+<HR align=center width="67%">
+
+<H3><A name=font>Font (Fuente)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>font: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>[ <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#font-style">&lt;font-style&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#font-variant">&lt;font-variant&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#font-weight">&lt;font-weight&gt;</A>]? 
+      <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#font-size">&lt;font-size&gt;</A> 
+      [ / <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#line-height">&lt;line-height&gt;</A>]? 
+      <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#font-family">&lt;familia 
+      de fuente&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>No definido<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>font</STRONG> puede usarse como una forma 
+rápida para las diferentes propiedades de fuentes, así como para <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#line-height">line 
+height (altura de línea)</A>. Por ejemplo,</P><PRE><CODE class=css>P { font: italic bold 12pt/14pt Times, serif }</CODE></PRE>
+<P>especifica párrafos con negrita (bold) e itálica (italic), fuente Times o 
+serif con un tamaño de 12 puntos y una altura de línea de 14 puntos.</P>
+<HR align=center width="88%">
+
+<H2><A name=color-background>Propiedades de color y fondo</A></H2>
+<UL>
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#color">Color</A> 
+
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-color">Background 
+  Color (Color de fondo)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-image">Background 
+  Image (Imagen de fondo)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-repeat">Background 
+  Repeat (Repetir fondo)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-attachment">Background 
+  Attachment (Fijación de fondo)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-position">Background 
+  Position (Posición del fondo)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background">Background 
+  (Fondo)</A> </LI></UL>
+<HR align=center width="77%">
+
+<H3><A name=color>Color</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>color: <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#color-units">&lt;color&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>Determinado por el navegador<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>color</STRONG> permite especificar el color de 
+un elemento. Vea la <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#color-units">sección 
+Unidades </A>para descripciones del valor de colores, Algunos ejemplos de reglas 
+de color:</P><PRE><CODE class=css>H1 { color: blue }
+H2 { color: #000080 }
+H3 { color: #0c0 }</CODE></PRE>
+<P>Para ayudar a evitar conflictos con hojas de estilo del usuario, siempre 
+deberían especificarse juntas las propiedades <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background">background</A></STRONG> 
+y <STRONG class=css>color</STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=background-color>Background Color (Color de fondo)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>background-color: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#color-units">&lt;color&gt;</A> 
+      | transparent<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>transparent<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>background-color</STRONG> establece el color 
+del fondo de un elemento. Por ejemplo:</P><PRE><CODE class=css>BODY { background-color: white }
+H1   { background-color: #000080 }</CODE></PRE>
+<P>Para ayudar a evitar conflictos con hojas de estilo del usuario, siempre que 
+use <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-image">background-color</A></STRONG> 
+debería especificar <STRONG class=css>background-image</STRONG>. En la mayoría 
+de casos, es adecuado <STRONG class=css>background-image: none</STRONG>. </P>
+<P>Los autores también pueden usar la foma rápida de la propiedad <STRONG 
+class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background">background</A></STRONG>, 
+que está mejor soportada que la propiedad <STRONG 
+class=css>background-color</STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=background-image>Background Image (Imagen de fondo)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>background-image: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#urls">&lt;url&gt;</A> 
+      | none<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>none<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>background-image</STRONG> establece la imagen 
+de fondo de un elemento. Por ejemplo:</P><PRE><CODE class=css>BODY { background-image: url(/images/foo.gif) }
+P    { background-image: url(http://www.htmlhelp.com/fondo.png) }</CODE></PRE>
+<P>Cuando se define una imagen de fondo (background image), también debería 
+definirse un <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-color">background 
+color (color de fondo)</A> similar para aquellos que no cargan las imágenes.</P>
+<P>Los autores también pueden usar la foma rápida de la propiedad <STRONG 
+class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background">background</A></STRONG>, 
+que está mejor soportada que la propiedad <STRONG 
+class=css>background-image</STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=background-repeat>Background Repeat (Repetir fondo)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>background-repeat: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>repeat | repeat-x | repeat-y | no-repeat<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>repeat<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>background-repeat</STRONG> determina como se 
+repite la <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-image">background 
+image (imagen de fondo)</A> especificada. El valor <STRONG 
+class=css>repeat-x</STRONG> repetirá la imagen horizontalmente mientras que el 
+valor <STRONG class=css>repeat-y </STRONG>repetirá la imagen verticalmente. Por 
+ejemplo:</P><PRE><CODE class=css>BODY { background: white url(caramelo.gif);
+       background-repeat: repeat-x }</CODE></PRE>
+<P>En el ejemplo de arriba, la imagen solo será organizada en mosaico 
+horizontal.</P>
+<P>Los autores también pueden usar la foma rápida de la propiedad <STRONG 
+class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background">background</A></STRONG>, 
+que está mejor soportada que la propiedad <STRONG 
+class=css>background-repeat</STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=background-attachment>Background Attachment (Fijación de 
+fondo)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>background-attachment: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>scroll | fixed<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>scroll<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>background-attachment</STRONG> determina si la 
+<A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-image">background 
+image (imagen de fondo)</A> especificada se desplazará con el contenido o será 
+fija con respecto al lienzo. Por ejemplo, la línea siguiente especifica una 
+imagen de fondo fija:</P><PRE><CODE class=css>BODY { background: white url(candybar.gif);
+       background-attachment: fixed }</CODE></PRE>
+<P>Los autores también pueden usar la foma rápida de la propiedad <STRONG 
+class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background">background</A></STRONG>, 
+que está mejor soportada que la propiedad <STRONG 
+class=css>background-attachment</STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=background-position>Background Position (Posición del 
+fondo)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>background-position: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>[<A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">&lt;porcentaje&gt;</A> 
+      | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A>]{1,2} 
+      | [top | center | bottom] || [left | center | right]<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>0% 0%<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Elementos de nivel bloque y elementos 
+reemplazados<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>background-position</STRONG> da la posición 
+inicial de la <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-image">background 
+image (imagen de fondo)</A> especificada. Esta propiedad solo puede aplicarse a 
+<A href="http://www.htmlhelp.com/reference/html40/block.html">elementos de nivel 
+bloque</A> y a elementos reemplazados. (Un <DFN>elemento reemplazado</DFN> es 
+aquel del que solo se conocen las dimensiones intrínsecas; los elementos 
+reemplazados HTML incluyen <STRONG class=html>IMG</STRONG>, <STRONG 
+class=html>INPUT</STRONG>, <STRONG class=html>TEXTAREA</STRONG>, <STRONG 
+class=html>SELECT</STRONG>, y <STRONG class=html>OBJECT</STRONG>.)</P>
+<P>La forma más sencilla de asignar una ubicación de fondo es con palabras 
+clave:</P>
+<UL>
+  <LI>Palabras clave horizontales (<STRONG class=css>left</STRONG>, <STRONG 
+  class=css>center</STRONG>, <STRONG class=css>right</STRONG>) 
+  <LI>Palabras clave horizontales verticales (<STRONG class=css>top</STRONG>, 
+  <STRONG class=css>center</STRONG>, <STRONG class=css>bottom</STRONG>) </LI></UL>
+<P>También pueden usarse <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">porcentajes</A> 
+y <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitudes</A> 
+para asignar la posición de la imagen de fondo. Los porcentajes son relativos al 
+tamaño del elemento. Aunque se permiten longitudes, no se recomiendan debido a 
+su inherente debilidad al tratar con diferentes resoluciones de pantalla.</P>
+<P>Al usar porcentajes o longitudes, se especifica primero la posición 
+horizontal y luego la vertical. Un valor como <STRONG class=css>20% 65%</STRONG> 
+especifica que la imagen se colocará 20% a la derecha y 65% abajo del elemento. 
+Un valor como <STRONG class=css>5px 10px</STRONG> especifica que la esquina 
+superior izquierda de la imagen se colocará 5 pixels a la derecha y 10 pixels 
+abajo de la esquina superior izquierda del elemento.</P>
+<P>Si solo se da el valor horizontal, la posición vertical será 50%. Se permiten 
+combinaciones de longitudes y porcentajes, ya que son posiciones negativas. Por 
+ejemplo, <STRONG class=css>10% -2cm</STRONG> está permitido. Sin embargo, 
+porcentajes y longitudes no pueden combinarse con palabras clave.</P>
+<P>Las palabras clave son interpretadas como sigue:</P>
+<UL>
+  <LI><STRONG class=css>top left</STRONG> = <STRONG class=css>left top</STRONG> 
+  = <STRONG class=css>0% 0%</STRONG> 
+  <LI><STRONG class=css>top</STRONG> = <STRONG class=css>top center</STRONG> = 
+  <STRONG class=css>center top</STRONG> = <STRONG class=css>50% 0%</STRONG> 
+  <LI><STRONG class=css>right top</STRONG> = <STRONG class=css>top 
+  right</STRONG> = <STRONG class=css>100% 0%</STRONG> 
+  <LI><STRONG class=css>left</STRONG> = <STRONG class=css>left center</STRONG> = 
+  <STRONG class=css>center left</STRONG> = <STRONG class=css>0% 50%</STRONG> 
+  <LI><STRONG class=css>center</STRONG> = <STRONG class=css>center 
+  center</STRONG> = <STRONG class=css>50% 50%</STRONG> 
+  <LI><STRONG class=css>right</STRONG> = <STRONG class=css>right center</STRONG> 
+  = <STRONG class=css>center right</STRONG> = <STRONG class=css>100% 
+  50%</STRONG> 
+  <LI><STRONG class=css>bottom left</STRONG> = <STRONG class=css>left 
+  bottom</STRONG> = <STRONG class=css>0% 100%</STRONG> 
+  <LI><STRONG class=css>bottom</STRONG> = <STRONG class=css>bottom 
+  center</STRONG> = <STRONG class=css>center bottom</STRONG> = <STRONG 
+  class=css>50% 100%</STRONG> 
+  <LI><STRONG class=css>bottom right</STRONG> = <STRONG class=css>right 
+  bottom</STRONG> = <STRONG class=css>100% 100%</STRONG> </LI></UL>
+<P>Si la imagen de fondo está <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-attachment">fija</A> 
+en relación al lienzo, la imagen es colocada en relación al lienzo y no al 
+elemento.</P>
+<P>Los autores también pueden usar la foma rápida de la propiedad <STRONG 
+class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background">background</A></STRONG>, 
+que está mejor soportada que la propiedad <STRONG 
+class=css>background-position</STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=background>Background (Fondo)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>background: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-color">&lt;background-color&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-image">&lt;background-image&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-repeat">&lt;background-repeat&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-attachment">&lt;background-attachment&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-position">&lt;background-position&gt;</A> 
+      <BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>No definido<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>background</STRONG> es una forma rápida para 
+las propiedades más específicas relacionadas con background. Algunos ejemplos de 
+declaraciones de <STRONG class=css>background</STRONG>:</P><PRE><CODE class=css>BODY       { background: white url(http://www.htmlhelp.com/foo.gif) }
+BLOCKQUOTE { background: #7fffd4 }
+P          { background: url(../fondos/peon.png) #f0f8ff fixed }
+TABLE      { background: #0c0 url(hojas.jpg) no-repeat bottom right }</CODE></PRE>
+<P>Un valor no especificado recibirá el valor inicial. Por ejemplo, en las tres 
+primeras reglas de arriba, la propiedad <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#background-position">background-position</A></STRONG> 
+será establecida a <STRONG class=css>0% 0%</STRONG>.</P>
+<P>Para ayudar a evitar conflictos con hojas de estilo del usuario, siempre 
+deberían especificarse juntas las propiedades <STRONG 
+class=css>background</STRONG> y <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#color">color</A></STRONG>.</P>
+<HR align=center width="88%">
+
+<H2><A name=text>Propiedades de texto</A></H2>
+<UL>
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#word-spacing">Word 
+  Spacing (Espaciamiento de palabras)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#letter-spacing">Letter 
+  Spacing (Espaciamiento de letras)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#text-decoration">Text 
+  Decoration (Decoración de texto)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#vertical-align">Vertical 
+  Alignment (Alineación vertical)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#text-transform">Text 
+  Transformation (Transformación de texto)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#text-align">Text 
+  Alignment (Alineación de texto)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#text-indent">Text 
+  Indentation (Sangría de texto)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#line-height">Line 
+  Height (Altura de línea)</A> </LI></UL>
+<HR align=center width="77%">
+
+<H3><A name=word-spacing>Word Spacing (Espaciamiento de palabras)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>word-spacing: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>normal | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>normal<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>word-spacing</STRONG> define una cantidad 
+adicional de espacio entre palabras. El valor debe estar en formato de <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A>; 
+no se permiten valores negativos.</P>
+<P>Ejemplos:</P><PRE><CODE class=css>P EM   { word-spacing: 0.4em }
+P.nota { word-spacing: -0.2em }</CODE></PRE>
+<HR align=center width="67%">
+
+<H3><A name=letter-spacing>Letter Spacing (Espaciamiento de letras)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>letter-spacing: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>normal | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>normal<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>letter-spacing</STRONG> define una cantidad 
+adicional de espacio entre caracteres. El valor debe estar en formato de <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A>; 
+no se permiten valores negativos. Un ajuste de <STRONG class=css>0</STRONG> 
+evitará justificación.</P>
+<P>Ejemplos:</P><PRE><CODE class=css>H1     { letter-spacing: 0.1em }
+P.nota { letter-spacing: -0.1em }</CODE></PRE>
+<HR align=center width="67%">
+
+<H3><A name=text-decoration>Text Decoration (Decoración de texto)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>text-decoration: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><SPAN style="TEXT-DECORATION: none">none</SPAN> | [ <SPAN 
+      style="TEXT-DECORATION: underline">underline</SPAN> || <SPAN 
+      style="TEXT-DECORATION: overline">overline</SPAN> || <SPAN 
+      style="TEXT-DECORATION: line-through">line-through</SPAN> || <SPAN 
+      style="TEXT-DECORATION: blink">blink</SPAN> ]<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top><SPAN style="TEXT-DECORATION: none">none</SPAN><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad<STRONG class=css> text-decoration</STRONG> permite que el texto 
+sea decorado mediante una de cinco propiedades: <STRONG class=css><SPAN 
+style="TEXT-DECORATION: underline">underline</SPAN></STRONG> (subrayado), 
+<STRONG class=css><SPAN 
+style="TEXT-DECORATION: overline">overline</SPAN></STRONG> (línea superior), 
+<STRONG class=css><SPAN 
+style="TEXT-DECORATION: line-through">line-through</SPAN></STRONG> (tachado), 
+<STRONG class=css><SPAN style="TEXT-DECORATION: blink">blink</SPAN></STRONG> 
+(parpadeo), o por defecto <STRONG class=css><SPAN 
+style="TEXT-DECORATION: none">none</SPAN></STRONG> (ninguna).</P>
+<P>Por ejemplo, uno puede sugerir que los enlaces no sean subrayados con </P><PRE><CODE class=css>A:link, A:visited, A:active { text-decoration: none }</CODE></PRE>
+<HR align=center width="67%">
+
+<H3><A name=vertical-align>Vertical Alignment (Alineación vertical)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>vertical-align: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><SPAN style="VERTICAL-ALIGN: baseline">baseline</SPAN> | 
+      <SPAN style="VERTICAL-ALIGN: sub">sub</SPAN> | <SPAN 
+      style="VERTICAL-ALIGN: super">super</SPAN> | <SPAN 
+      style="VERTICAL-ALIGN: top">top</SPAN> | <SPAN 
+      style="VERTICAL-ALIGN: text-top">text-top</SPAN> | <SPAN 
+      style="VERTICAL-ALIGN: middle">middle</SPAN> | <SPAN 
+      style="VERTICAL-ALIGN: bottom">bottom</SPAN> | <SPAN 
+      style="VERTICAL-ALIGN: text-bottom">text-bottom</SPAN> | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">&lt;porcentaje&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>baseline<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Elementos en línea<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>vertical-align </STRONG>puede usarse para 
+alterar la ubicación vertical de un elemento en línea, en relación a su elemento 
+padre o a la línea del elemento. (Un <DFN>elemento en línea</DFN> es uno que no 
+tiene salto de línea ni antes ni después de él; por ejemplo, <STRONG 
+class=html>EM</STRONG>, <STRONG class=html>A</STRONG> y <STRONG 
+class=html>IMG</STRONG> en HTML.)</P>
+<P>El valor puede ser un <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">porcentaje</A> 
+relativo a la <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#line-height">altura 
+de línea (line-height)</A></STRONG> del elemento, que debería elevar la línea de 
+base del elemento en la cantidad especificada por encima de la línea base del 
+padre. No se permiten los valores negativos.</P>
+<P>El valor también puede ser una palabra clave. Las siguientes palabras clave 
+afectan la ubicación en relación al elemento padre:</P>
+<UL>
+  <LI><STRONG class=css>baseline</STRONG> (alinea líneas bases del elemento y el 
+  padre ) 
+  <LI><STRONG class=css>middle</STRONG> (alinea el punto medio vertical del 
+  elemento con la línea base más la mitad de x-height--la altura de la letra 
+  "x"--del padre) 
+  <LI><STRONG class=css>sub</STRONG> (subíndice) 
+  <LI><STRONG class=css>super</STRONG> (superíndice) 
+  <LI><STRONG class=css>text-top</STRONG> (alinea las partes superiores del 
+  elemento y la fuente del elemento padre) 
+  <LI><STRONG class=css>text-bottom</STRONG> (alinea las partes inferiores del 
+  elemento y la fuente del elemento padre) </LI></UL>
+<P>Las palabras clave que afectan la ubicación relativa a la línea del elemento 
+son</P>
+<UL>
+  <LI><STRONG class=css>top</STRONG> (alinea la parte superior del elemento con 
+  el elemento más alto en la línea) 
+  <LI><STRONG class=css>bottom</STRONG> (alinea la parte inferior del elemento 
+  con el elemento más bajo en la línea) </LI></UL>
+<P>La propiedad <STRONG class=css>vertical-align</STRONG> es particularmente 
+útil para alinear imágenes. Algunos ejemplos:</P><PRE><CODE class=css>IMG.centro { vertical-align: middle }
+IMG        { vertical-align: 50% }
+.exponente  { vertical-align: super }</CODE></PRE>
+<HR align=center width="67%">
+
+<H3><A name=text-transform>Text Transformation (Transformación de 
+texto)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>text-transform: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>none | <SPAN 
+      style="TEXT-TRANSFORM: capitalize">capitalize</SPAN> | <SPAN 
+      style="TEXT-TRANSFORM: uppercase">uppercase</SPAN> | <SPAN 
+      style="TEXT-TRANSFORM: lowercase">lowercase</SPAN><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>none<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>text-transform</STRONG> permite que el texto 
+se transforme por alguna de cuatro propiedades:</P>
+<UL>
+  <LI><STRONG class=css>Capitalize</STRONG> (escribe en mayúsculas el primer 
+  carácter de cada palabra) 
+  <LI><STRONG class=css>UPPERCASE</STRONG> (escribe en mayúsculas todos los 
+  caracteres de cada palabra) 
+  <LI><STRONG class=css>lowercase</STRONG> (usa letras pequeñas para todos los 
+  caracteres de cada palabra) 
+  <LI><STRONG class=css>none</STRONG> (valor inicial) </LI></UL>
+<P>Ejemplos:</P><PRE><CODE class=css>H1 { text-transform: uppercase }
+H2 { text-transform: capitalize }</CODE></PRE>
+<P>La propiedad <STRONG class=css>text-transform</STRONG> solo debería usarse 
+para expresar un deseo estilístico. Sería inapropiado, por ejemplo, usar <STRONG 
+class=css>text-transform</STRONG> para aplicar mayúsculas a las primera letras 
+de una lista de países o nombres.</P>
+<HR align=center width="67%">
+
+<H3><A name=text-align>Text Alignment (Alineación de texto)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>text-align: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>left | right | center | justify<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>Determinado por el navegador<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Elementos de nivel bloque<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>text-align</STRONG> puede aplicarse a <A 
+href="http://www.htmlhelp.com/reference/html40/block.html">elementos de nivel 
+bloque</A> (<STRONG class=html>P</STRONG>, <STRONG class=html>H1</STRONG>, etc.) 
+para dar la alineación del texto del elemento. Esta propiedad es similar en 
+función al atributo <STRONG class=html>ALIGN</STRONG> de HTML en párrafos, 
+encabezados y divisiones.</P>
+<P>Algunos ejemplos:</P><PRE><CODE class=css>H1          { text-align: center }
+P.diario { text-align: justify }</CODE></PRE>
+<HR align=center width="67%">
+
+<H3><A name=text-indent>Text Indentation (Sangría de texto)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>text-indent: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A> 
+      | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">&lt;porcentaje&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>0<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Elementos de nivel bloque<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>text-indent</STRONG> puede aplicarse a <A 
+href="http://www.htmlhelp.com/reference/html40/block.html">elementos de nivel 
+bloque</A> (<STRONG class=html>P</STRONG>, <STRONG class=html>H1</STRONG>, etc.) 
+para definir la cantidad de sangría que debería aplicarse a la primera línea. El 
+valor debe ser una <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A> 
+o un <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">porcentaje</A>; 
+los porcentajes se refieren al ancho del elemento padre. Un uso común para 
+<STRONG class=css>text-indent</STRONG> sería dar sangría a un párrafo:</P><PRE><CODE class=css>P { text-indent: 5em }</CODE></PRE>
+<HR align=center width="67%">
+
+<H3><A name=line-height>Line Height (Altura de línea)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>line-height: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>normal | &lt;número&gt; | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A> 
+      | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">&lt;porcentaje&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>normal<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>line-height</STRONG> aceptará un valor para 
+controlar el espacio entre líneas base de texto. Si el valor es un número, la 
+altura de línea se calcula multiplicando el tamaño de fuente del elemento por el 
+número. Los valores en porcentaje son relativos al tamaño de fuente del 
+elemento. No se permiten los valores negativos.</P>
+<P>La altura de línea también puede darse en la propiedad <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#font">font</A></STRONG> 
+junto con un tamaño de fuente.</P>
+<P>La propiedad <STRONG class=css>line-height</STRONG> podría usarse para texto 
+a doble espacio:</P><PRE><CODE class=css>P { line-height: 200% }</CODE></PRE>
+<P class=note><A href="http://www.microsoft.com/ie/">Microsoft Internet 
+Explorer</A> 3.x trata incorrectamente a los valores numéricos y a los valores 
+con unidades <STRONG class=css>em</STRONG> o <STRONG class=css>ex</STRONG> como 
+valores de pixel. Este error puede hacer ilegibles las páginas, por lo que los 
+autores deberían evitar provocarlo; con frecuencia, las unidades de porcentaje 
+son una buena opción.</P>
+<HR align=center width="88%">
+
+<H2><A name=box>Propiedades de cuadros</A></H2>
+<UL>
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#margin-top">Top 
+  Margin (Margen superior)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#margin-right">Right 
+  Margin (Margen derecho)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#margin-bottom">Bottom 
+  Margin (Margen inferior)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#margin-left">Left 
+  Margin (Margen izquierdo)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#margin">Margin 
+  (Margen)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#padding-top">Top 
+  Padding (Relleno superior)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#padding-right">Right 
+  Padding (Relleno derecho)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#padding-bottom">Bottom 
+  Padding (Relleno inferior)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#padding-left">Left 
+  Padding (Relleno izquierdo)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#padding">Padding 
+  (Relleno)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-top-width">Top 
+  Border Width (Ancho de borde superior)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-right-width">Right 
+  Border Width (Ancho de borde derecho)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-bottom-width">Bottom 
+  Border Width (Ancho de borde inferior)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-left-width">Left 
+  Border Width (Ancho de borde izquierdo)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-width">Border 
+  Width (Ancho de borde)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-color">Border 
+  Color (Color de borde)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-style">Border 
+  Style (Estilo de borde)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-top">Top 
+  Border (Borde superior)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-right">Right 
+  Border (Borde derecho)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-bottom">Bottom 
+  Border (Borde de fondo)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-left">Left 
+  Border (Borde izquierdo)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border">Border 
+  (Borde)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#width">Width 
+  (Ancho)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#height">Height 
+  (Altura)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#float">Float 
+  (Flotar) </A>
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#clear">Clear 
+  (Despejar)</A> </LI></UL>
+<HR align=center width="77%">
+
+<H3><A name=margin-top>Top Margin (Margen superior)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>margin-top: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A> 
+      | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">&lt;porcentaje&gt;</A> 
+      | auto<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>0<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>margin-top</STRONG> establece el margen 
+superior de un elemento especificando una <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A> 
+o un <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">porcentaje</A>. 
+Los valores en porcentaje se refieren al ancho del elemento padre. Se permiten 
+márgenes negativos.</P>
+<P>Por ejemplo, la siguiente regla eliminaría el margen superior de un 
+documento:</P><PRE><CODE class=css>BODY { margin-top: 0 }</CODE></PRE>
+<P>Note que los márgenes verticales contiguos son contraídos para usar el mayor 
+de los valores de margen.</P>
+<HR align=center width="67%">
+
+<H3><A name=margin-right>Right Margin (Margen derecho)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>margin-right: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A> 
+      | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">&lt;porcentaje&gt;</A> 
+      | auto<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>0<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>margin-right</STRONG> establece el margen 
+derecho de un elemento especificando una <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A> 
+o un <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">porcentaje</A>. 
+Los valores en porcentaje se refieren al ancho del elemento padre. Se permiten 
+márgenes negativos.</P>
+<P>Ejemplo:</P><PRE><CODE class=css>P.estrecho { margin-right: 50% }</CODE></PRE>
+<P>Note que los márgenes horizontales contiguos no son contraídos.</P>
+<HR align=center width="67%">
+
+<H3><A name=margin-bottom>Bottom Margin (Margen inferior)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>margin-bottom: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A> 
+      | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">&lt;porcentaje&gt;</A> 
+      | auto<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>0<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>margin-bottom</STRONG> establece el margen 
+inferior de un elemento especificando una <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A> 
+o un <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">porcentaje</A>. 
+Los valores en porcentaje se refieren al ancho del elemento padre. Se permiten 
+márgenes negativos.</P>
+<P>Ejemplo:</P><PRE><CODE class=css>DT { margin-bottom: 3em }</CODE></PRE>
+<P>Note que los márgenes verticales contiguos son contraídos para usar el mayor 
+de los valores de margen.</P>
+<HR align=center width="67%">
+
+<H3><A name=margin-left>Left Margin (Margen izquierdo)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>margin-left: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A> 
+      | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">&lt;porcentaje&gt;</A> 
+      | auto<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>0<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>margin-left</STRONG> establece el margen 
+izquierdo de un elemento especificando una <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A> 
+o un <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">porcentaje</A>. 
+Los valores en porcentaje se refieren al ancho del elemento padre. Se permiten 
+márgenes negativos.</P>
+<P>Ejemplo:</P><PRE><CODE class=css>ADDRESS { margin-left: 50% }</CODE></PRE>
+<P>Note que los márgenes horizontales contiguos no son contraídos.</P>
+<HR align=center width="67%">
+
+<H3><A name=margin>Margin (Margen)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>margin: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>[ <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A> 
+      | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">&lt;porcentaje&gt;</A> 
+      | auto]{1,4}<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>No definido<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>margin</STRONG> establece los márgenes de un 
+elemento especificando entre uno y cuatro valores, donde cada valor es una <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A>, 
+un <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">porcentaje</A> 
+o <STRONG class=css>auto</STRONG>. Los valores en porcentaje se refieren al 
+ancho del elemento padre. Se permiten márgenes negativos.</P>
+<P>Si se dan cuatro valores, se aplican a los márgenes superior, derecho, 
+inferior e izquierdo, respectivamente. Si se da un valor, se aplica a todos los 
+lados. Si se dan dos o tres valores, los valores faltantes se toman del lado 
+opuesto.</P>
+<P>Ejemplos de declaraciones margin incluyen:</P><PRE><CODE class=css>BODY { margin: 5em }             /* todos los márgenes 5em */
+P    { margin: 2em 4em }         /* márgenes superior e inferior 2em,
+                                    márgenes izquierdo y derecho 4em */
+DIV { margin: 1em 2em 3em 4em } /* margen superior 1em,
+                                    right margin 2em,
+                                    bottom margin 3em,
+                                    left margin 4em */</CODE></PRE>
+<P>Note que los márgenes verticales contiguos son contraídos para usar el mayor 
+de los valores de margen. Los márgenes horizontales no son contraídos.</P>
+<P>Usando la propiedad <STRONG class=css>margin</STRONG> se pueden establecer 
+todos los márgenes; alternativamente, pueden usarse las propiedades <STRONG 
+class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#margin-top">margin-top</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#margin-bottom">margin-bottom</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#margin-left">margin-left</A></STRONG> 
+y <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#margin-right">margin-right</A></STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=padding-top>Top Padding (Relleno superior)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>padding-top: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A> 
+      | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">&lt;porcentaje&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>0<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>padding-top</STRONG> describe cuanto espacio 
+colocar entre el <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-top">borde 
+superior </A>y el contenido del selector. El valor puede ser una <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A> 
+o un <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">porcentaje</A>. 
+Los valores en porcentaje se refieren al ancho del elemento padre. <EM>No</EM> 
+se permiten los valores negativos.</P>
+<HR align=center width="67%">
+
+<H3><A name=padding-right>Right Padding (Relleno derecho)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>padding-right: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A> 
+      | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">&lt;porcentaje&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>0<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>padding-right</STRONG> describe cuanto espacio 
+colocar entre el <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-right">borde 
+derecho</A> y el contenido del selector. El valor puede ser una <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A> 
+o un <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">porcentaje</A>. 
+Los valores en porcentaje se refieren al ancho del elemento padre. <EM>No</EM> 
+se permiten los valores negativos.</P>
+<HR align=center width="67%">
+
+<H3><A name=padding-bottom>Bottom Padding (Relleno inferior)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>padding-bottom: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A> 
+      | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">&lt;porcentaje&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>0<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>padding-bottom</STRONG> describe cuanto 
+espacio colocar entre el <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-bottom">borde 
+inferior</A> y el contenido del selector. El valor puede ser una <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A> 
+o un <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">porcentaje</A>. 
+Los valores en porcentaje se refieren al ancho del elemento padre. <EM>No</EM> 
+se permiten los valores negativos.</P>
+<HR align=center width="67%">
+
+<H3><A name=padding-left>Left Padding (Relleno izquierdo)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>padding-left: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A> 
+      | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">&lt;porcentaje&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>0<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>padding-left</STRONG> describe cuanto espacio 
+colocar entre el <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-left">borde 
+izquierdo</A> y el contenido del selector. El valor puede ser una <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A> 
+o un <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">porcentaje</A>. 
+Los valores en porcentaje se refieren al ancho del elemento padre. <EM>No</EM> 
+se permiten los valores negativos.</P>
+<HR align=center width="67%">
+
+<H3><A name=padding>Padding (Relleno)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>padding: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>[ <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A> 
+      | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">&lt;porcentaje&gt;</A>]{1,4}<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>0<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>padding</STRONG> es una manera rápida de 
+aplicar las propiedades <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#padding-top">padding-top</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#padding-right">padding-right</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#padding-bottom">padding-bottom</A></STRONG> 
+y <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#padding-left">padding-left</A></STRONG>.</P>
+<P>El <DFN>padding</DFN> de un elemento es la cantidad de espacio entre el <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border">borde</A> 
+y el contenido del elemento. Se dan entre uno y cuatro valores, donde cada valor 
+puede ser una <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A> 
+o un <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">porcentaje</A>. 
+Los valores en porcentaje se refieren al ancho del elemento padre. <EM>No</EM> 
+se permiten los valores negativos.</P>
+<P>Si se dan cuatro valores, se aplican a los paddings superior, derecho, 
+inferior e izquierdo, respectivamente. Si se da un valor, se aplica a todos los 
+lados. Si se dan dos o tres valores, los valores faltantes se toman del lado 
+opuesto.</P>
+<P>Por ejemplo, la siguiente regla establece el padding superior a 2em, el 
+derecho a 4em, el inferior a 5em y el izquierdo a 4em:</P><PRE><CODE class=css>BLOCKQUOTE { padding: 2em 4em 5em }</CODE></PRE>
+<HR align=center width="67%">
+
+<H3><A name=border-top-width>Top Border Width (Ancho de borde superior)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>border-top-width: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>thin | medium | thick | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>medium<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>border-top-width</STRONG> se usa para 
+especificar el ancho del <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-top">borde 
+superior</A> de un elemento. El valor puede ser una de tres palabras clave, que 
+no son afectadas por tamaño de fuente o <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A>, 
+que pueden usarse para obtener anchos relativos. No se permiten los valores 
+negativos.</P>
+<P>También se pueden usar las propiedades <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-top">border-top</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-width">border-width</A></STRONG>, 
+o la forma rápida <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border">border</A></STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=border-right-width>Right Border Width (Ancho de borde 
+derecho)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>border-right-width: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>thin | medium | thick | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>medium<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>border-right-width</STRONG> se usa para 
+especificar el ancho del <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-right">borde 
+derecho</A> de un elemento. El valor puede ser una de tres palabras clave, que 
+no son afectadas por tamaño de fuente o <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A>, 
+que pueden usarse para obtener anchos relativos. No se permiten los valores 
+negativos.</P>
+<P>También se pueden usar las propiedades <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-right">border-right</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-width">border-width</A></STRONG>, 
+o la forma rápida <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border">border</A></STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=border-bottom-width>Bottom Border Width (Ancho de borde 
+inferior)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>border-bottom-width: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>thin | medium | thick | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>medium<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>border-bottom-width</STRONG> se usa para 
+especificar el ancho del <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-bottom">borde 
+inferior</A> de un elemento. El valor puede ser una de tres palabras clave, que 
+no son afectadas por tamaño de fuente o <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A>, 
+que pueden usarse para obtener anchos relativos. No se permiten los valores 
+negativos.</P>
+<P>También se pueden usar las propiedades <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-bottom">border-bottom</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-width">border-width</A></STRONG>, 
+o la forma rápida <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border">border</A></STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=border-left-width>Left Border Width (Ancho de borde 
+izquierdo)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>border-left-width: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>thin | medium | thick | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>medium<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>border-left-width</STRONG> se usa para 
+especificar el ancho del <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-left">borde 
+izquierdo</A> de un elemento. El valor puede ser una de tres palabras clave, que 
+no son afectadas por tamaño de fuente o <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A>, 
+que pueden usarse para obtener anchos relativos. No se permiten los valores 
+negativos.</P>
+<P>También se pueden usar las propiedades <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-left">border-left</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-width">border-width</A></STRONG>, 
+o la forma rápida <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border">border</A></STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=border-width>Border Width (Ancho de borde)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>border-width: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>[ thin | medium | thick | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A> 
+      ]{1,4}<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>No definido<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>border-width</STRONG> se usa para establecer 
+el ancho de borde de un elemento especificando entre uno y cuatro valores, donde 
+cada valor es una palabra clave o una <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A>. 
+No se permiten los valores negativos.</P>
+<P>Si se dan cuatro valores, se aplican a los bordes superior, derecho, inferior 
+e izquierdo, respectivamente. Si se da un valor, se aplica a todos los lados. Si 
+se dan dos o tres valores, los valores faltantes se toman del lado opuesto.</P>
+<P>Esta propiedad es una forma rápida de las propiedades <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-top-width">border-top-width</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-right-width">border-right-width</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-bottom-width">border-bottom-width</A></STRONG> 
+y <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-left-width">border-left-width</A></STRONG>.</P>
+<P>También puede usarse la propiedad rápida <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border">border</A></STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=border-color>Border Color (Color de borde)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>border-color: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#color-units">&lt;color&gt;</A>{1,4}<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>El valor de la propiedad <STRONG class=css><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#color">color</A></STRONG><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>border-color</STRONG> establece el color del 
+<A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border">borde</A> 
+de un elemento. Se especifican entre uno y cuatro <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#color-units">valores 
+de color</A> Si se dan cuatro valores, se aplican a los colores de borde 
+superior, derecho, inferior e izquierdo, respectivamente. Si se da un valor, se 
+aplica a todos los lados. Si se dan dos o tres valores, los valores faltantes se 
+toman del lado opuesto.</P>
+<P>También puede usarse la propiedad rápida <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border">border</A></STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=border-style>Border Style (Estilo de borde)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>border-style: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>[ none | dotted | dashed | solid | double | groove | ridge 
+      | inset | outset ]{1,4}<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>none<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>border-style</STRONG> establece el estilo del 
+<A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border">borde</A> 
+de un elemento. Esta propiedad debe ser especificada para que el borde sea 
+visible.</P>
+<P>Se especifican entre una y cuatro palabras clave. Si se dan cuatro valores, 
+se aplican a los estilos de borde superior, derecho, inferior e izquierdo, 
+respectivamente. Si se da un valor, se aplica a todos los lados. Si se dan dos o 
+tres valores, los valores faltantes se toman del lado opuesto.</P>
+<P>También puede usarse la propiedad rápida <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border">border</A></STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=border-top>Top Border (Borde superior)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>border-top: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-top-width">&lt;border-top-width&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-style">&lt;border-style&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#color-units">&lt;color&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>No definido<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>border-top</STRONG> es una forma rápida para 
+establecer el <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-top-width">ancho</A>, 
+<A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-style">estilo</A> 
+y el <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-color">color</A> 
+del borde superior de un elemento.</P>
+<P>Note que solo puede darse un valor de <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-style">border-style</A></STRONG>.</P>
+<P>También puede usarse la propiedad rápida <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border">border</A></STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=border-right>Right Border (Borde derecho)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>border-right: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-right-width">&lt;border-top-width&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-style">&lt;border-style&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#color-units">&lt;color&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>No definido<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>border-right</STRONG> es una forma rápida para 
+establecer el <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-right-width">ancho</A>, 
+<A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-style">estilo</A> 
+y el <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-color">color</A> 
+del borde derecho de un elemento.</P>
+<P>Note que solo puede darse un valor de <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-style">border-style</A></STRONG>.</P>
+<P>También puede usarse la propiedad rápida <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border">border</A></STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=border-bottom>Bottom Border (Borde de fondo)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>border-bottom: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-bottom-width">&lt;border-bottom-width&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-style">&lt;border-style&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#color-units">&lt;color&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>No definido<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>border-bottom</STRONG> es una forma rápida 
+para establecer el <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-bottom-width">ancho</A>, 
+<A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-style">estilo</A> 
+y el <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-color">color</A> 
+del borde inferior de un elemento.</P>
+<P>Note que solo puede darse un valor de <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-style">border-style</A></STRONG>.</P>
+<P>También puede usarse la propiedad rápida <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border">border</A></STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=border-left>Left Border (Borde izquierdo)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>border-left: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-left-width">&lt;border-left-width&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-style">&lt;border-style&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#color-units">&lt;color&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>No definido<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>border-left</STRONG> es una forma rápida para 
+establecer el <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-left-width">ancho</A>, 
+<A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-style">estilo</A> 
+y el <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-color">color</A> 
+del borde izquierdo de un elemento.</P>
+<P>Note que solo puede darse un valor de <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-style">border-style</A></STRONG>.</P>
+<P>También puede usarse la propiedad rápida <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border">border</A></STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=border>Border (Borde)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>border: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-width">&lt;border-width&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-style">&lt;border-style&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#color-units">&lt;color&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>No definido<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>border</STRONG> es una forma rápida para 
+establecer el <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-width">ancho</A>, 
+<A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-style">estilo</A> 
+y el <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-color">color</A> 
+del borde izquierdo de un elemento. </P>
+<P>Ejemplos de declaraciones border incluyen:</P><PRE><CODE class=css>H2        { border: groove 3em }
+A:link    { border: solid blue }
+A:visited { border: thin dotted #800080 }
+A:active  { border: thick double red }</CODE></PRE>
+<P>La propiedad <STRONG class=css>border</STRONG> solo puede establecer todos 
+los cuatro bordes; puede aplicar solo un ancho y estilo de borde. Para dar 
+diferentes valores a los cuatro bordes de un elemento, se deben usar una o más 
+de las propiedades <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-top">border-top</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-right">border-right</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-bottom">border-bottom</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-left">border-left</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-color">border-color</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-width">border-width</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-style">border-style</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-top-width">border-top-width</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-right-width">border-right-width</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-bottom-width">border-bottom-width</A></STRONG>, 
+o <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#border-left-width">border-left-width</A></STRONG>.</P>
+<HR align=center width="67%">
+
+<H3><A name=width>Width (Ancho)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>width: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A> 
+      | <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">&lt;porcentaje&gt;</A> 
+      | auto<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>auto<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Elementos de nivel bloque y elementos 
+reemplazados<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>A cada elemento de <A 
+href="http://www.htmlhelp.com/reference/html40/block.html">nivel bloque</A> o 
+elemento reemplazado se le puede dar un ancho width, especificado como una <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A>, 
+un <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">porcentaje</A> 
+o como <STRONG class=css>auto</STRONG>. (Un <DFN>elemento reemplazado</DFN> es 
+uno del que solo se conocen las dimensiones intrínsecas; los elementos 
+reemplazados HTML incluyen <STRONG class=html>IMG</STRONG>, <STRONG 
+class=html>INPUT</STRONG>, <STRONG class=html>TEXTAREA</STRONG>, <STRONG 
+class=html>SELECT</STRONG> y <STRONG class=html>OBJECT</STRONG>.) El valor 
+inicial para la propiedad <STRONG class=css>width</STRONG> es <STRONG 
+class=css>auto</STRONG>, lo que resulta en el ancho intrínseco del elemento 
+(<I>es decir</I>,<I> </I>el ancho del elemento mismo, como por ejemplo el ancho 
+de una imagen). Los porcentajes se refieren al ancho del elemento padre. No se 
+permiten los valores negativos.</P>
+<P>Esta propiedad podría usarse para dar un ancho común a algunos elementos 
+<STRONG class=html>INPUT</STRONG>, como los botones SUBMIT y RESET:</P><PRE><CODE class=css>INPUT.boton { width: 10em }</CODE></PRE>
+<HR align=center width="67%">
+
+<H3><A name=height>Height (Altura)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>height: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">&lt;longitud&gt;</A> 
+      | auto<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>auto<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Elementos de nivel bloque y elementos 
+reemplazados<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>A cada elemento de <A 
+href="http://www.htmlhelp.com/reference/html40/block.html">nivel bloque</A> o 
+elemento reemplazado se le puede dar una altura height, especificada como una <A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">longitud</A> 
+o como <STRONG class=css>auto</STRONG>. (Un <DFN>elemento reemplazado</DFN> es 
+uno del que solo se conocen las dimensiones intrínsecas; los elementos 
+reemplazados HTML incluyen <STRONG class=html>IMG</STRONG>, <STRONG 
+class=html>INPUT</STRONG>, <STRONG class=html>TEXTAREA</STRONG>, <STRONG 
+class=html>SELECT</STRONG> y <STRONG class=html>OBJECT</STRONG>.) El valor 
+inicial para la propiedad <STRONG class=css>width</STRONG> es <STRONG 
+class=css>auto</STRONG>, lo que resulta en el ancho intrínseco del elemento 
+(<I>es decir</I>,<I> </I>el ancho del elemento mismo, como por ejemplo el ancho 
+de una imagen). No se permiten longitudes negativos.</P>
+<P>Como con la propiedad <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#width">width</A></STRONG>, 
+<STRONG class=css>height</STRONG> puede usarse para escalar una imagen:</P><PRE><CODE class=css>IMG.foo { width: 40px; height: 40px }</CODE></PRE>
+<P>En la mayoría de los casos, se recomienda a los autores escalar la imagen en 
+un programa de edición de imágenes, ya que los navegadores probablemente no 
+escalarán las imágenes con alta calidad, y ya que la escala reducida origina que 
+el usuario descargue un archivo innecesariamente grande. Sin embargo, escalar 
+mediante las propiedades <STRONG class=css>width</STRONG> y <STRONG 
+class=css>height</STRONG> es un opción útil para hojas de estilo definidas por 
+el usuario a fin de superar problemas de visión.</P>
+<HR align=center width="67%">
+
+<H3><A name=float>Float (Flotar) </A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>float: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>left | right | none<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>none<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>float</STRONG> permite ajustar texto alrededor 
+de un elemento. Esto es idéntico en propósito a <STRONG 
+class=html>ALIGN=left</STRONG> y <STRONG class=html>ALIGN=right</STRONG> para el 
+elemento <STRONG class=html>IMG</STRONG> de <A 
+href="http://www.htmlhelp.com/reference/wilbur/">HTML 3.2</A>, pero CSS1 permite 
+que todos los elementos "floten," no solo las <A 
+href="http://www.htmlhelp.com/reference/wilbur/special/img.html">imágenes</A> y 
+<A href="http://www.htmlhelp.com/reference/wilbur/table/table.html">tablas</A> 
+que permite HTML 3.2.</P>
+<HR align=center width="67%">
+
+<H3><A name=clear>Clear (Despejar)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>clear: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>none | left | right | both<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>none<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>clear</STRONG> especifica si un elemento 
+permite elementos flotantes a sus lados. Un valor <STRONG 
+class=css>left</STRONG> mueve el elemento debajo de cualquier elemento flotante 
+a su izquierda; <STRONG class=css>right</STRONG> actúa en forma similar para 
+elementos flotantes a la derecha. Otros valores son <STRONG 
+class=css>none</STRONG>, que es el valor inicial, y <STRONG 
+class=css>both</STRONG>, que mueve el elemento debajo de los elementos flotantes 
+a ambos lados. Esta propiedad es similar en función a <STRONG class=html>&lt;BR 
+CLEAR=left|right|all|none&gt;</STRONG> de <A 
+href="http://www.htmlhelp.com/reference/wilbur/">HTML 3.2</A>, pero puede 
+aplicarse a todos los elementos.</P>
+<HR align=center width="88%">
+
+<H2><A name=classification>Propiedades de clasificación</A></H2>
+<UL>
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#display">Display 
+  (Visualización)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#white-space">Whitespace 
+  (Espacio en blanco)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#list-style-type">List 
+  Style Type (Tipo de estilo de lista)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#list-style-image">List 
+  Style Image (Imagen de estilo de lista)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#list-style-position">List 
+  Style Position (Posición de estilo de lista)</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#list-style">List 
+  Style (Estilo de lista)</A> </LI></UL>
+<HR align=center width="77%">
+
+<H3><A name=display>Display (Visualización)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>display: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>block | inline | list-item | none<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>block<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Todos los elementos<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>No<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>display</STRONG> se usa para definir un 
+elemento con uno de cuatro valores:</P>
+<UL>
+  <LI><STRONG class=css>block</STRONG> (un salto de línea antes y después del 
+  elemento) 
+  <LI><STRONG class=css>inline</STRONG> (ningún salto de línea antes ni después 
+  del elemento) 
+  <LI><STRONG class=css>list-item </STRONG>(igual que <STRONG 
+  class=css>block</STRONG>, salvo que se agrega un marcador de ítems de lista) 
+  <LI><STRONG class=css>none</STRONG> (sin visualización) </LI></UL>
+<P>A cada elemento típicamente se le da un valor de <STRONG 
+class=css>display</STRONG> (visualización) por defecto para el navegador, basado 
+en la interpretación sugerida en la especificación HTML.</P>
+<P>La propiedad <STRONG class=css>display</STRONG> puede ser peligrosa debido a 
+su capacidad de mostrar elementos en lo que de otro modo sería un formato 
+inapropiado. El uso del valor <STRONG class=css>none</STRONG> desactivará la 
+visualización del elemento al que está asignado, incluyendo cualquier elemento 
+hijo.</P>
+<HR align=center width="67%">
+
+<H3><A name=white-space>Whitespace (Espacio en blanco)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>white-space: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>normal | pre | nowrap<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>normal<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Elementos de nivel bloque<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>white-space</STRONG> determinará cómo se 
+tratan los espacios dentro del elemento. Esta propiedad toma uno de tres 
+valores:</P>
+<UL>
+  <LI><STRONG class=css>normal</STRONG> (contrae múltiples espacios en uno) 
+  <LI><STRONG class=css>pre</STRONG> (no contrae múltiples espacios) 
+  <LI><STRONG class=css>nowrap</STRONG> (no permite el ajuste de línea sin una 
+  etiqueta <A 
+  href="http://www.htmlhelp.com/reference/html40/special/br.html">&lt;BR&gt;</A>) 
+  </LI></UL>
+<HR align=center width="67%">
+
+<H3><A name=list-style-type>List Style Type (Tipo de estilo de lista)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>list-style-type: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>disc | circle | square | decimal | lower-roman | 
+      upper-roman | lower-alpha | upper-alpha | none<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>disc<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Elementos con la propiedad <STRONG class=css><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#display">display</A></STRONG> 
+      <STRONG class=css>list-item</STRONG><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>list-style-type</STRONG> especifica el tipo de 
+marcador de ítems de lista, y se usa si <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#list-style-image">list-style-image</A></STRONG> 
+es <STRONG class=css>none</STRONG> o si la carga de imágenes está 
+desactivada.</P>
+<P>Ejemplos:</P><PRE><CODE class=css>LI.cuadrado { list-style-type: square }
+UL.simple { list-style-type: none }
+OL        { list-style-type: upper-alpha }  /* A B C D E etc. */
+OL OL     { list-style-type: decimal }      /* 1 2 3 4 5 etc. */
+OL OL OL  { list-style-type: lower-roman }  /* i ii iii iv v etc. */</CODE></PRE>
+<HR align=center width="67%">
+
+<H3><A name=list-style-image>List Style Image (Imagen de estilo de 
+lista)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>list-style-image: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#urls">&lt;url&gt;</A> 
+      | ninguno<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>none<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Elementos con la propiedad <STRONG class=css><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#display">display</A></STRONG> 
+      <STRONG class=css>list-item</STRONG><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>list-style-image</STRONG> especifica la imagen 
+que se usará como marcador de ítems de lista cuando se active la carga de 
+imágenes, reemplazando al marcador especificado en la propiedad <STRONG 
+class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#list-style-type">list-style-type</A></STRONG>.</P>
+<P>Ejemplos:</P><PRE><CODE class=css>UL.marca { list-style-image: url(/LI-marcadores/visto.gif) }
+UL LI.x { list-style-image: url(x.png) }</CODE></PRE>
+<HR align=center width="67%">
+
+<H3><A name=list-style-position>List Style Position (Posición de estilo de 
+lista)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>list-style-position: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top>inside | outside<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>outside<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Elementos con la propiedad <STRONG class=css><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#display">display</A></STRONG> 
+      <STRONG class=css>list-item</STRONG><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>list-style-position</STRONG> toma el valor 
+<STRONG class=css>inside</STRONG> o <STRONG class=css>outside</STRONG>, donde 
+<STRONG class=css>outside</STRONG> es el valor por defecto. Esta propiedad 
+determina donde se coloca el marcador en relación al ítem de lista. Si se usa el 
+valor <STRONG class=css>inside</STRONG>, las líneas se ajustarán debajo del 
+marcador en vez de estar con sangría. Ejemplo:</P><PRE><SAMP>Posición exterior (outside):
+ * Item de lista 1
+   segunda línea de ítems de la lista
+
+Posición interior (inside):
+   * Item de lista 1
+   segunda línea de ítems de la lista</SAMP></PRE>
+<HR align=center width="67%">
+
+<H3><A name=list-style>List Style (Estilo de lista)</A></H3>
+<TABLE cellPadding=5>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left><B>Sintaxis:</B> </TH>
+    <TD vAlign=top>list-style: &lt;valor&gt;<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valores posibles:</B> </TH>
+    <TD vAlign=top><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#list-style-type">&lt;list-style-type&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#list-style-position">&lt;list-style-position&gt;</A> 
+      || <A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#urls">&lt;url&gt;</A><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Valor inicial:</B> </TH>
+    <TD vAlign=top>No definido<BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Se aplica a:</B> </TH>
+    <TD vAlign=top>Elementos con la propiedad <STRONG class=css><A 
+      href="http://www.htmlhelp.com/es/reference/css/all-properties.html#display">display</A></STRONG> 
+      <STRONG class=css>list-item</STRONG><BR></TD></TR>
+  <TR>
+    <TH vAlign=top align=left><B>Heredado:</B> </TH>
+    <TD vAlign=top>Si<BR></TD></TR></TBODY></TABLE>
+<P>La propiedad <STRONG class=css>list-style</STRONG> property es una forma 
+rápida de las propiedades <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#list-style-type">list-style-type</A></STRONG>, 
+<STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#list-style-position">list-style-position</A></STRONG> 
+y <STRONG class=css><A 
+href="http://www.htmlhelp.com/es/reference/css/all-properties.html#list-style-image">list-style-image</A></STRONG>.</P>
+<P>Ejemplos:</P><PRE><CODE class=css>LI.cuadrado { list-style: square inside }
+UL.simple  { list-style: none }
+UL.marca  { list-style: url(/LI-marcadores/visto.gif) circle }
+OL        { list-style: upper-alpha }
+OL OL     { list-style: lower-roman inside }</CODE></PRE>
+<HR align=center width="88%">
+
+<H2><A name=units>Unidades</A></H2>
+<UL>
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#length">Unidades 
+  de longitud</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#percentage">Unidades 
+  de porcentaje</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#color-units">Unidades 
+  de color</A> 
+  <LI><A 
+  href="http://www.htmlhelp.com/es/reference/css/all-properties.html#urls">URLs</A> 
+  </LI></UL>
+<H3><A name=length>Unidades de longitud</A></H3>
+<P>Un valor de longitud se forma por un signo <STRONG class=css>+</STRONG> 
+o<STRONG class=css> -</STRONG> opcional, seguido de un número y de una 
+abreviación de dos letras que indica la unidad. No hay espacios en un valor de 
+longitud; <I>por ej.</I>, <STRONG class=css>1.3 em</STRONG> no es un valor de 
+longitud válido, pero <STRONG class=css>1.3em</STRONG> si lo es. Una longitud de 
+<STRONG class=css>0</STRONG> no necesita las dos letras para identificar la 
+unidad.</P>
+<P>Tanto las unidades de longitud <EM>relativas</EM> y <EM>absolutas</EM> están 
+soportadas en CSS1. Las unidades relativas dan una longitud relativa a otra 
+propiedad longitud, y se prefieren ya que se ajustarán mejor a medios 
+diferentes. Las siguientes unidades relativas están disponibles:</P>
+<UL>
+  <LI><STRONG class=css>em</STRONG> (ems, la altura de la fuente de los 
+  elementos) 
+  <LI><STRONG class=css>ex</STRONG> (x-height, altura de la letra "x") 
+  <LI><STRONG class=css>px</STRONG> (pixels, relativa a la resolución del 
+  lienzo) </LI></UL>
+<P>Las unidades de longitud absolutas son muy dependientes del medio de salida, 
+y son por lo tanto menos útiles que las unidades relativas. Las siguientes 
+unidades absolutas están disponibles:</P>
+<UL>
+  <LI><STRONG class=css>in</STRONG> (pulgadas; 1 pulgada=2.54 cm) 
+  <LI><STRONG class=css>cm</STRONG> (centímetros; 1 cm = 10 mm) 
+  <LI><STRONG class=css>mm</STRONG> (milímetros) 
+  <LI><STRONG class=css>pt</STRONG> (puntos; 1pt = 1/72 pulgada) 
+  <LI><STRONG class=css>pc</STRONG> (picas; 1 pc = 12 pt) </LI></UL>
+<HR align=center width="67%">
+
+<H3><A name=percentage>Unidades de porcentaje</A></H3>
+<P>Un valor de porcentaje se forma por un signo <STRONG class=css>+</STRONG> o 
+<STRONG class=css>-</STRONG> opcional, seguido de un número y de <STRONG 
+class=css>%</STRONG>. No hay espacios en un valor de porcentaje.</P>
+<P>Los valores de porcentaje son relativos a otros, tal como están definidos en 
+cada propiedad. Generalmente, el valor de porcentaje es relativo al tamaño de 
+fuente del elemento.</P>
+<HR align=center width="67%">
+
+<H3><A name=color-units>Unidades de color</A></H3>
+<P>Un valor de color es una palabra clave o una especificación numérica RGB.</P>
+<P>Las 16 palabras clave se toman de la paleta Windows VGA: <STRONG 
+class=css><SPAN style="COLOR: aqua">aguamarina</SPAN></STRONG>, <STRONG 
+class=css><SPAN style="COLOR: black">negro</SPAN></STRONG>, <STRONG 
+class=css><SPAN style="COLOR: blue">azul</SPAN></STRONG>, <STRONG 
+class=css><SPAN style="COLOR: fuchsia">fucsia</SPAN></STRONG>, <STRONG 
+class=css><SPAN style="COLOR: gray">gris</SPAN></STRONG>, <STRONG 
+class=css><SPAN style="COLOR: green">verde</SPAN></STRONG>, <STRONG 
+class=css><SPAN style="COLOR: lime">verde lima</SPAN></STRONG>, <STRONG 
+class=css><SPAN style="COLOR: maroon">marrón</SPAN></STRONG>, <STRONG 
+class=css><SPAN style="COLOR: navy">azul marino</SPAN></STRONG>, <STRONG 
+class=css><SPAN style="COLOR: olive">olivo</SPAN></STRONG>, <STRONG 
+class=css><SPAN style="COLOR: purple">morado</SPAN></STRONG>, <STRONG 
+class=css><SPAN style="COLOR: red">rojo</SPAN></STRONG>, <STRONG class=css><SPAN 
+style="COLOR: silver">plata</SPAN></STRONG>, <STRONG class=css><SPAN 
+style="COLOR: teal">turquesa</SPAN></STRONG>, <STRONG class=css><SPAN 
+style="BACKGROUND: silver; COLOR: white">blanco</SPAN></STRONG>, y <STRONG 
+class=css><SPAN 
+style="BACKGROUND: silver; COLOR: yellow">amarillo</SPAN></STRONG>.</P>
+<P>Los colores RGB se dan en una de cuatro maneras:</P>
+<UL>
+  <LI><STRONG class=css>#rrggbb</STRONG> (<I>por ej.,</I> <STRONG 
+  class=css>#00cc00</STRONG>) 
+  <LI><STRONG class=css>#rgb</STRONG> (<I>por ej.,</I> <STRONG 
+  class=css>#0c0</STRONG>) 
+  <LI><STRONG class=css>rgb(x,x,x)</STRONG> donde <STRONG class=css>x</STRONG> 
+  es un entero entre 0 y 255 inclusive (<I>por ej.,</I> <STRONG 
+  class=css>rgb(0,204.0)</STRONG>) 
+  <LI><STRONG class=css>rgb(y%,y%,y%)</STRONG> donde <STRONG 
+  class=css>y</STRONG> es un número entre 0.0 y 100.0 inclusive (<I>por ej.,</I> 
+  <STRONG class=css>rgb(0%,80%,0%)</STRONG>) </LI></UL>
+<P>Los ejemplos de arriba especifican el mismo color.</P>
+<P>Douglas R. Jacobson también ha dearrollado una práctica <A 
+href="http://www.htmlhelp.com/icon/hexchart.gif">Carta de colores RGB</A> de 
+referencia rápida (61 kB).</P>
+<HR align=center width="67%">
+
+<H3><A name=urls>URLs</A></H3>
+<P>Un valor URL es dado por <STRONG class=css>url(foo)</STRONG>, donde <STRONG 
+class=css>foo</STRONG> es la URL. La URL puede ser opcionalmente entrecomillada 
+con comillas simples (<STRONG class=css>'</STRONG>) o dobles (<STRONG 
+class=css>"</STRONG>) y puede contener espacios en blanco antes o después de la 
+URL (opcionalmente entrecomillada).</P>
+<P>Los paréntesesis, comas, espacios, comillas simples o dobles en una URL deben 
+ser encerradas con diagonales invertidas. Las URLs parciales son interpretadas 
+en relación a la fuente de la hoja de estilo, no a la fuente de HTML.</P>
+<P class=note>Note que <A 
+href="http://home.netscape.com/comprod/products/communicator/navigator.html">Netscape 
+Navigator 4.x</A> interpreta incorrectamente las URLs parciales relativas a la 
+fuente HTML. Teniendo en cuenta este defecto, los autores pueden preferir usar 
+las URLs completas siempre que sea posible.</P>
+<P>Ejemplos:</P><PRE><CODE class=css>BODY { background: url(franja.gif) }
+BODY { background: url(http://www.htmlhelp.com/franja.gif) }
+BODY { background: url(franja.gif) }
+BODY { background: url("franja.gif") }
+BODY { background: url(\"Ulalume\".png) } /* comillas en URL encerradas */</CODE></PRE>
+<HR align=right width="60%">
+</BODY></HTML>

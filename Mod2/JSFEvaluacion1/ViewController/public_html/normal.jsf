@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='windows-1252'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head></h:head>
+        <h:body>
+            <h2>
+                #{msgs.cabecera2}
+            </h2>
+             
+            <h:form>
+                <p>
+                    #{msgs.bienvenido}
+                </p>
+                <p>
+                    #{msgs.nombres}: #{beanRegistro.nombre}
+                </p>
+                <p>
+                    #{msgs.apellido}: #{beanRegistro.apellidos}
+                </p>
+                <p>
+                    #{msgs.sueldos}: #{beanRegistro.sueldo} euros
+                </p>
+                <p>
+                    #{msgs.fecha}: 
+                    <h:outputText value="#{beanRegistro.fecha}">
+                        <f:convertDateTime/>
+                    </h:outputText>
+                </p>
+            </h:form>
+        </h:body>
+    </html>
+</f:view>

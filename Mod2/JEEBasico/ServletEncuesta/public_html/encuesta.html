@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <title>Encuesta con Servlet</title>
+    </head>
+    <body>
+        <h1>
+            <b>Rellene los siguientes datos de la encuesta, por favor</b>
+        </h1>
+         
+        <form action="servletencuesta" method="POST">
+            Nombre:
+            <input type="text" name="Nombre" width="30"/>
+            <br/>
+            e-mail:
+            <input type="text" name="Email" width="30"/>
+            <br/>
+            &iquest;Piensa utilizar servlet para sus proyectos a partir de ahora?<br/>
+            Si
+            <input type="radio" name="Respuesta" value="SI"/>
+            No
+            <input type="radio" name="Respuesta" value="NO"/>
+            Ns/Nc
+            <input type="radio" name="Respuesta" value="NSNC"/>
+            <br/>
+            <br/>
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Limpiar"/>
+            <br/>
+            <a href="servletencuesta">Ver resultados</a>
+        </form>
+    </body>
+</html>

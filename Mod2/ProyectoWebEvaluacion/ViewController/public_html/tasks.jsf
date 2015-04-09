@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:c="http://java.sun.com/jsp/jstl/core">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <h:head>
+            <title>
+                #{msg['gestor.tareas']}
+                #{msg['barra.vertical']}
+                #{msg['listado']}
+            </title>
+        </h:head>
+        <h:body>
+            <h:form id="tareas">
+                <h:commandLink action="#{tasksBean.logout}" value="#{msg['desconectar']}" style="margin-right: 2px;"/>
+                <h:link value="#{msg['editar.usuario']}" outcome="edit"/>
+                <h1>
+                    <h:outputText value="#{msg['listado.tareas']}"/>
+                </h1>
+                <h:panelGroup id="wrapper">
+                    <h:messages id="globales" style="color:red"/>
+                    <h:dataTable value="#{tasksBean.tareas}" var="item" id="tasksList" rows="10">
+                        <h:column id="id">
+                            <f:facet name="header">
+                                <h:outputText value="#{msg['id']}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{msg['titulo']}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.titulo}" rendered="#{not item.editable}"/>
+                            <h:inputText value="#{item.titulo}" rendered="#{item.editable}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{msg['descripcion']}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.descripcion}" rendered="#{not item.editable}"/>
+                            <h:inputText value="#{item.descripcion}" rendered="#{item.editable}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{msg['estado']}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.estado}" rendered="#{not item.editable}"/>
+                            <h:inputText value="#{item.estado}" rendered="#{item.editable}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{msg['fecha.inicio']}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.fechaInicio}" rendered="#{not item.editable}">
+                                <f:convertDateTime pattern="dd/MM/yyyy"/>
+                            </h:outputText>
+                            <h:inputText value="#{item.fechaInicio}" required="true"
+                                         converterMessage="#{err['errores.requerido.fecha']}"
+                                         rendered="#{item.editable}">
+                                <f:convertDateTime pattern="dd/MM/yyyy"/>
+                            </h:inputText>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{msg['fecha.fin']}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.fechaFin}" rendered="#{not item.editable}">
+                                <f:convertDateTime pattern="dd/MM/yyyy"/>
+                            </h:outputText>
+                            <h:inputText value="#{item.fechaFin}" required="true"
+                                         converterMessage="#{err['errores.requerido.fecha']}"
+                                         rendered="#{item.editable}">
+                                <f:convertDateTime pattern="dd/MM/yyyy"/>
+                            </h:inputText>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="Editar"/>
+                            </f:facet>
+                            <h:commandButton value="#{(!item.editable) ? 'Editar' : 'Guardar'}"
+                                             action="#{tasksBean.editAction(item)}" rendered="#{(!item.editable)}">
+                                <f:ajax render=":tareas:wrapper"/>
+                            </h:commandButton>
+                            <h:commandButton value="#{(!item.editable) ? 'Editar' : 'Guardar'}"
+                                             action="#{tasksBean.save(item)}" rendered="#{(item.editable)}">
+                                <f:ajax execute="@form" render=":tareas:wrapper :tareas:globales"/>
+                            </h:commandButton>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+            </h:form>
+             
+            <h:form id="anadir">
+                <h1>
+                    #{msg['anadir.nueva.tarea']}
+                </h1>
+                <h:panelGrid columns="3">
+                    <h:outputLabel id="tituloLabel" value="#{msg['titulo']}" for="titulo"/>
+                    <h:inputText id="titulo" name="titulo" required="true"
+                                 requiredMessage="#{err['errores.requerido.titulo']}" value="#{tasksBean.titulo}"/>
+                    <h:message id="tituloMensaje" for="titulo" style="color:red"/>
+                    <h:outputLabel value="#{msg['descripcion']}" id="descripcionLabel" for="descripcion"/>
+                    <h:inputText id="descripcion" name="descripcion" required="true"
+                                 requiredMessage="#{err['errores.requerido.descripcion']}"
+                                 value="#{tasksBean.descripcion}"/>
+                    <h:message id="descripcionMensaje" for="descripcion" style="color:red"/>
+                    <h:outputLabel value="#{msg['estado']}" id="estadoLabel" for="estado"/>
+                    <h:inputText name="estado" id="estado" required="true"
+                                 requiredMessage="#{err['errores.requerido.estado']}" value="#{tasksBean.estado}"/>
+                    <h:message id="estadoMensaje" for="estado" style="color:red"/>
+                    <h:outputLabel value="#{msg['fecha.inicio']}" id="fechaInicioLabel" for="fechaInicio"/>
+                    <h:inputText name="fechaInicio" id="fechaInicio" value="#{tasksBean.fechaInicio}" required="true"
+                                 converterMessage="#{err['errores.requerido.fecha']}"
+                                 requiredMessage="#{err['errores.requerido.fecha.obligatoria']}">
+                        <f:convertDateTime pattern="dd/MM/yyyy"/>
+                    </h:inputText>
+                    <h:message id="fechaInicioMensaje" for="fechaInicio" style="color:red"/>
+                    <h:outputLabel value="#{msg['fecha.fin']}" id="fechaFinLabel" for="fechaFin"/>
+                    <h:inputText id="fechaFin" name="fechaFin" value="#{tasksBean.fechaFin}" required="true"
+                                 converterMessage="#{err['errores.requerido.fecha']}"
+                                 requiredMessage="#{err['errores.requerido.fecha.obligatoria']}">
+                        <f:convertDateTime pattern="dd/MM/yyyy"/>
+                    </h:inputText>
+                    <h:message id="fechaFinMensaje" for="fechaFin" style="color:red"/>
+                    <h:commandButton value="#{msg['anadir']}" action="#{tasksBean.nuevaTarea}">
+                        <f:ajax execute="@form" render=":tareas:tasksList @form"/>
+                    </h:commandButton>
+                </h:panelGrid>
+                <h:messages id="nuevo" style="color:green" globalOnly="true" showDetail="true"/>
+            </h:form>
+        </h:body>
+    </html>
+</f:view>

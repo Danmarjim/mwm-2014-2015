@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <title>Consulta</title>
+    </head>
+    <body>
+        <div style="text-align:center;color:Black;background-color:InfoBackground;width:50.0%;">
+            <h2>Consulta de una Base de Datos</h2>
+             
+            <h3>(Se utilizan cookies y sesiones)</h3>
+            <hr size="7" color="#FF0000"/>
+            <h3>Bienvenido. Introduzca el nombre de la tabla que desea consultar</h3>
+             
+            <form name="formulario" action="consultabd" method="POST">
+                Nombre de la tabla:
+                <input type="text" name="NombreTabla" width="50"/>
+                <br/>
+                <br/>
+                <input type="submit" value="Enviar"/>
+                <br/>
+                <br/>
+                <a href="consultabd">Desconexion</a>
+            </form>
+            <hr size="7" color="#FF0000"/>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+package es.us.lsi.mwm;
+
+
+public class ClassA {
+    
+    private String a;
+    private String b;
+    private final String MASTER_FEELING= "me cago en el master";
+    private int atributo1;
+    
+    public ClassA() {
+        
+    }
+    
+    public String getA(){
+        return a;
+    }
+    
+    public String getB(){
+        return b;
+    }
+    
+    public void setA(String a){
+        this.a=a;
+    }
+    
+    public void setB(String b){
+        this.b=b;
+    }
+    
+    public String toString(){
+        return this.MASTER_FEELING;
+    }
+    
+    public int incrementaAtributo1(int incremento){
+        atributo1=atributo1*incremento;
+        return atributo1;
+    }       
+}

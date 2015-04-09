@@ -1,0 +1,21 @@
+@charset "windows-1252";
+
+#textoAzul {
+    text-align:center;
+    font-family:Arial;
+    color:Blue;
+    font-size:large;
+}
+
+#textoRojo {
+    color:Red;
+    font-size:medium;
+}
+
+#formulario {
+    color:Black;
+    font-size:medium;
+}
+
+
+
