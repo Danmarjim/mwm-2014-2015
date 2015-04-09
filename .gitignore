@@ -10,3 +10,7 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/Mod3/Ejercicio1/ServicioWebBienvenida/nbproject/private/
+/Mod3/Ejercicio1/ServicioWebBienvenida/build/
+/Mod3/Ejercicio1/ClienteServicioWeb/nbproject/private/
+/Mod3/Ejercicio1/ClienteServicioWeb/build/
