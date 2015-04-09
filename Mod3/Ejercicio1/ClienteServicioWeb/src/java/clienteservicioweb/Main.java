@@ -22,9 +22,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Llamando al servicio");
-        System.out.println("Dani");
-        System.out.println("Fin");
+        System.out.println(saluda("Dani"));
     }
     
     private static String saluda(String arg){
