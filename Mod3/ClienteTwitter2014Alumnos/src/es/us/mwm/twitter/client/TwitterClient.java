@@ -17,6 +17,8 @@ public class TwitterClient {
     //TODO: 2. Incluir la URI del servicio REST
     private static final String USER_TIMELINE_URI = "https://api.twitter.com/1.1/statuses/user_timeline.json";
     private static final String FRIEND_TIMELINE_URI = "https://api.twitter.com/1.1/statuses/home_timeline.json";
+    private static final String POST_TWEET_URI = "https://api.twitter.com/1.1/statuses/update.json"; 
+    private static final String TRENDS_URI = "https://api.twitter.com/1.1/trends/place.json?id=23424950"; //?id=1;
 
     private static Integer numeroDeLlamadas = 0;
     
@@ -63,5 +65,38 @@ public class TwitterClient {
         return response;
     }
     
-    //TODO: 4. Incluir métodos para llamar a otros servicios: UserTimeline, Update, Trends, etc.
+    public Response updateStatus(String status){
+        System.out.println("Numero de llamadas: "+ ++numeroDeLlamadas);
+        MultivaluedMap<String, String> parametros = new MultivaluedHashMap<String, String>();
+        parametros.add("status", status);
+        final Response response = client.target(POST_TWEET_URI).request().post(Entity.form(parametros));
+        //TODO: 3. Llamada al servicio
+        if (response.getStatus() != 200) {
+            String errorEntity = null;
+            if (response.hasEntity()) {
+                errorEntity = response.readEntity(String.class);
+            }
+            throw new RuntimeException("La petición a twitter no tuvo éxito. Código de respuesta: "
+                    + response.getStatus() + ", razón: " + response.getStatusInfo().getReasonPhrase()
+                    + ", entity: " + errorEntity);
+        }
+        return response;
+    }
+    
+    public Response getTrends(){
+        //España WOID = 23424950
+        System.out.println("Numero de llamadas: "+ ++numeroDeLlamadas);
+        final Response response = client.target(TRENDS_URI).request().get();
+        //TODO: 3. Llamada al servicio
+        if (response.getStatus() != 200) {
+            String errorEntity = null;
+            if (response.hasEntity()) {
+                errorEntity = response.readEntity(String.class);
+            }
+            throw new RuntimeException("La petición a twitter no tuvo éxito. Código de respuesta: "
+                    + response.getStatus() + ", razón: " + response.getStatusInfo().getReasonPhrase()
+                    + ", entity: " + errorEntity);
+        }
+        return response;
+    }
 }

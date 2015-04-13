@@ -1,51 +1,51 @@
 
-package es.us.mwm.twitter.entities.tweets;
+package es.us.mwm.twitter.entities.trends;
 
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Generated;
 
 @Generated("org.jsonschema2pojo")
-public class Entities_ {
+public class Location {
 
-    private Url url;
-    private Description description;
+    private String name;
+    private Long woeid;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * 
      * @return
-     *     The url
+     *     The name
      */
-    public Url getUrl() {
-        return url;
+    public String getName() {
+        return name;
     }
 
     /**
      * 
-     * @param url
-     *     The url
+     * @param name
+     *     The name
      */
-    public void setUrl(Url url) {
-        this.url = url;
+    public void setName(String name) {
+        this.name = name;
     }
 
     /**
      * 
      * @return
-     *     The description
+     *     The woeid
      */
-    public Description getDescription() {
-        return description;
+    public Long getWoeid() {
+        return woeid;
     }
 
     /**
      * 
-     * @param description
-     *     The description
+     * @param woeid
+     *     The woeid
      */
-    public void setDescription(Description description) {
-        this.description = description;
+    public void setWoeid(Long woeid) {
+        this.woeid = woeid;
     }
 
     public Map<String, Object> getAdditionalProperties() {

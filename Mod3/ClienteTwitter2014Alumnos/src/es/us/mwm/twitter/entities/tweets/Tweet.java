@@ -9,26 +9,26 @@ import javax.annotation.Generated;
 public class Tweet {
 
     private Object coordinates;
-    private Boolean favorited;
     private Boolean truncated;
-    private String createdAt;
-    private String idStr;
+    private String created_at;
+    private Boolean favorited;
+    private String id_str;
+    private Object in_reply_to_user_id_str;
     private Entities entities;
-    private Object inReplyToUserIdStr;
-    private Object contributors;
     private String text;
-    private Integer retweetCount;
-    private Object inReplyToStatusIdStr;
-    private Integer id;
+    private Object contributors;
+    private Long id;
+    private Long retweet_count;
+    private Object in_reply_to_status_id_str;
     private Object geo;
     private Boolean retweeted;
-    private Boolean possiblySensitive;
-    private Object inReplyToUserId;
+    private Object in_reply_to_user_id;
     private Object place;
-    private User user;
-    private Object inReplyToScreenName;
     private String source;
-    private Object inReplyToStatusId;
+    private User user;
+    private Object in_reply_to_screen_name;
+    private Object in_reply_to_status_id;
+    private Boolean possibly_sensitive;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
@@ -52,24 +52,6 @@ public class Tweet {
     /**
      * 
      * @return
-     *     The favorited
-     */
-    public Boolean getFavorited() {
-        return favorited;
-    }
-
-    /**
-     * 
-     * @param favorited
-     *     The favorited
-     */
-    public void setFavorited(Boolean favorited) {
-        this.favorited = favorited;
-    }
-
-    /**
-     * 
-     * @return
      *     The truncated
      */
     public Boolean getTruncated() {
@@ -88,37 +70,73 @@ public class Tweet {
     /**
      * 
      * @return
-     *     The createdAt
+     *     The created_at
      */
-    public String getCreatedAt() {
-        return createdAt;
+    public String getCreated_at() {
+        return created_at;
     }
 
     /**
      * 
-     * @param createdAt
+     * @param created_at
      *     The created_at
      */
-    public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
+    public void setCreated_at(String created_at) {
+        this.created_at = created_at;
     }
 
     /**
      * 
      * @return
-     *     The idStr
+     *     The favorited
      */
-    public String getIdStr() {
-        return idStr;
+    public Boolean getFavorited() {
+        return favorited;
     }
 
     /**
      * 
-     * @param idStr
+     * @param favorited
+     *     The favorited
+     */
+    public void setFavorited(Boolean favorited) {
+        this.favorited = favorited;
+    }
+
+    /**
+     * 
+     * @return
      *     The id_str
      */
-    public void setIdStr(String idStr) {
-        this.idStr = idStr;
+    public String getId_str() {
+        return id_str;
+    }
+
+    /**
+     * 
+     * @param id_str
+     *     The id_str
+     */
+    public void setId_str(String id_str) {
+        this.id_str = id_str;
+    }
+
+    /**
+     * 
+     * @return
+     *     The in_reply_to_user_id_str
+     */
+    public Object getIn_reply_to_user_id_str() {
+        return in_reply_to_user_id_str;
+    }
+
+    /**
+     * 
+     * @param in_reply_to_user_id_str
+     *     The in_reply_to_user_id_str
+     */
+    public void setIn_reply_to_user_id_str(Object in_reply_to_user_id_str) {
+        this.in_reply_to_user_id_str = in_reply_to_user_id_str;
     }
 
     /**
@@ -142,19 +160,19 @@ public class Tweet {
     /**
      * 
      * @return
-     *     The inReplyToUserIdStr
+     *     The text
      */
-    public Object getInReplyToUserIdStr() {
-        return inReplyToUserIdStr;
+    public String getText() {
+        return text;
     }
 
     /**
      * 
-     * @param inReplyToUserIdStr
-     *     The in_reply_to_user_id_str
+     * @param text
+     *     The text
      */
-    public void setInReplyToUserIdStr(Object inReplyToUserIdStr) {
-        this.inReplyToUserIdStr = inReplyToUserIdStr;
+    public void setText(String text) {
+        this.text = text;
     }
 
     /**
@@ -178,63 +196,9 @@ public class Tweet {
     /**
      * 
      * @return
-     *     The text
-     */
-    public String getText() {
-        return text;
-    }
-
-    /**
-     * 
-     * @param text
-     *     The text
-     */
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    /**
-     * 
-     * @return
-     *     The retweetCount
-     */
-    public Integer getRetweetCount() {
-        return retweetCount;
-    }
-
-    /**
-     * 
-     * @param retweetCount
-     *     The retweet_count
-     */
-    public void setRetweetCount(Integer retweetCount) {
-        this.retweetCount = retweetCount;
-    }
-
-    /**
-     * 
-     * @return
-     *     The inReplyToStatusIdStr
-     */
-    public Object getInReplyToStatusIdStr() {
-        return inReplyToStatusIdStr;
-    }
-
-    /**
-     * 
-     * @param inReplyToStatusIdStr
-     *     The in_reply_to_status_id_str
-     */
-    public void setInReplyToStatusIdStr(Object inReplyToStatusIdStr) {
-        this.inReplyToStatusIdStr = inReplyToStatusIdStr;
-    }
-
-    /**
-     * 
-     * @return
      *     The id
      */
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
@@ -243,8 +207,44 @@ public class Tweet {
      * @param id
      *     The id
      */
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
+    }
+
+    /**
+     * 
+     * @return
+     *     The retweet_count
+     */
+    public Long getRetweet_count() {
+        return retweet_count;
+    }
+
+    /**
+     * 
+     * @param retweet_count
+     *     The retweet_count
+     */
+    public void setRetweet_count(Long retweet_count) {
+        this.retweet_count = retweet_count;
+    }
+
+    /**
+     * 
+     * @return
+     *     The in_reply_to_status_id_str
+     */
+    public Object getIn_reply_to_status_id_str() {
+        return in_reply_to_status_id_str;
+    }
+
+    /**
+     * 
+     * @param in_reply_to_status_id_str
+     *     The in_reply_to_status_id_str
+     */
+    public void setIn_reply_to_status_id_str(Object in_reply_to_status_id_str) {
+        this.in_reply_to_status_id_str = in_reply_to_status_id_str;
     }
 
     /**
@@ -286,37 +286,19 @@ public class Tweet {
     /**
      * 
      * @return
-     *     The possiblySensitive
-     */
-    public Boolean getPossiblySensitive() {
-        return possiblySensitive;
-    }
-
-    /**
-     * 
-     * @param possiblySensitive
-     *     The possibly_sensitive
-     */
-    public void setPossiblySensitive(Boolean possiblySensitive) {
-        this.possiblySensitive = possiblySensitive;
-    }
-
-    /**
-     * 
-     * @return
-     *     The inReplyToUserId
-     */
-    public Object getInReplyToUserId() {
-        return inReplyToUserId;
-    }
-
-    /**
-     * 
-     * @param inReplyToUserId
      *     The in_reply_to_user_id
      */
-    public void setInReplyToUserId(Object inReplyToUserId) {
-        this.inReplyToUserId = inReplyToUserId;
+    public Object getIn_reply_to_user_id() {
+        return in_reply_to_user_id;
+    }
+
+    /**
+     * 
+     * @param in_reply_to_user_id
+     *     The in_reply_to_user_id
+     */
+    public void setIn_reply_to_user_id(Object in_reply_to_user_id) {
+        this.in_reply_to_user_id = in_reply_to_user_id;
     }
 
     /**
@@ -340,42 +322,6 @@ public class Tweet {
     /**
      * 
      * @return
-     *     The user
-     */
-    public User getUser() {
-        return user;
-    }
-
-    /**
-     * 
-     * @param user
-     *     The user
-     */
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    /**
-     * 
-     * @return
-     *     The inReplyToScreenName
-     */
-    public Object getInReplyToScreenName() {
-        return inReplyToScreenName;
-    }
-
-    /**
-     * 
-     * @param inReplyToScreenName
-     *     The in_reply_to_screen_name
-     */
-    public void setInReplyToScreenName(Object inReplyToScreenName) {
-        this.inReplyToScreenName = inReplyToScreenName;
-    }
-
-    /**
-     * 
-     * @return
      *     The source
      */
     public String getSource() {
@@ -394,19 +340,73 @@ public class Tweet {
     /**
      * 
      * @return
-     *     The inReplyToStatusId
+     *     The user
      */
-    public Object getInReplyToStatusId() {
-        return inReplyToStatusId;
+    public User getUser() {
+        return user;
     }
 
     /**
      * 
-     * @param inReplyToStatusId
+     * @param user
+     *     The user
+     */
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    /**
+     * 
+     * @return
+     *     The in_reply_to_screen_name
+     */
+    public Object getIn_reply_to_screen_name() {
+        return in_reply_to_screen_name;
+    }
+
+    /**
+     * 
+     * @param in_reply_to_screen_name
+     *     The in_reply_to_screen_name
+     */
+    public void setIn_reply_to_screen_name(Object in_reply_to_screen_name) {
+        this.in_reply_to_screen_name = in_reply_to_screen_name;
+    }
+
+    /**
+     * 
+     * @return
      *     The in_reply_to_status_id
      */
-    public void setInReplyToStatusId(Object inReplyToStatusId) {
-        this.inReplyToStatusId = inReplyToStatusId;
+    public Object getIn_reply_to_status_id() {
+        return in_reply_to_status_id;
+    }
+
+    /**
+     * 
+     * @param in_reply_to_status_id
+     *     The in_reply_to_status_id
+     */
+    public void setIn_reply_to_status_id(Object in_reply_to_status_id) {
+        this.in_reply_to_status_id = in_reply_to_status_id;
+    }
+
+    /**
+     * 
+     * @return
+     *     The possibly_sensitive
+     */
+    public Boolean getPossibly_sensitive() {
+        return possibly_sensitive;
+    }
+
+    /**
+     * 
+     * @param possibly_sensitive
+     *     The possibly_sensitive
+     */
+    public void setPossibly_sensitive(Boolean possibly_sensitive) {
+        this.possibly_sensitive = possibly_sensitive;
     }
 
     public Map<String, Object> getAdditionalProperties() {

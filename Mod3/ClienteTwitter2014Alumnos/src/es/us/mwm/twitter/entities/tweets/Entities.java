@@ -10,9 +10,9 @@ import javax.annotation.Generated;
 @Generated("org.jsonschema2pojo")
 public class Entities {
 
-    private List<Url> urls = new ArrayList<Url>();
+    private List<Object> urls = new ArrayList<Object>();
     private List<Object> hashtags = new ArrayList<Object>();
-    private List<Object> userMentions = new ArrayList<Object>();
+    private List<Object> user_mentions = new ArrayList<Object>();
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
@@ -20,7 +20,7 @@ public class Entities {
      * @return
      *     The urls
      */
-    public List<Url> getUrls() {
+    public List<Object> getUrls() {
         return urls;
     }
 
@@ -29,7 +29,7 @@ public class Entities {
      * @param urls
      *     The urls
      */
-    public void setUrls(List<Url> urls) {
+    public void setUrls(List<Object> urls) {
         this.urls = urls;
     }
 
@@ -54,19 +54,19 @@ public class Entities {
     /**
      * 
      * @return
-     *     The userMentions
+     *     The user_mentions
      */
-    public List<Object> getUserMentions() {
-        return userMentions;
+    public List<Object> getUser_mentions() {
+        return user_mentions;
     }
 
     /**
      * 
-     * @param userMentions
+     * @param user_mentions
      *     The user_mentions
      */
-    public void setUserMentions(List<Object> userMentions) {
-        this.userMentions = userMentions;
+    public void setUser_mentions(List<Object> user_mentions) {
+        this.user_mentions = user_mentions;
     }
 
     public Map<String, Object> getAdditionalProperties() {

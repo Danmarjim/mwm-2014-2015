@@ -4,6 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/Users/Dani/NetBeansProjects/Mod3/ClienteTwitter2014Alumnos/src/es/us/mwm/twitter/client/TwitterAuthorization.java</file>
+            <file>file:/Users/Dani/NetBeansProjects/Mod3/ClienteTwitter2014Alumnos/src/es/us/mwm/twitter/gui/TwitterJFrame.java</file>
+            <file>file:/Users/Dani/NetBeansProjects/Mod3/ClienteTwitter2014Alumnos/src/es/us/mwm/twitter/client/TwitterClient.java</file>
+            <file>file:/Users/Dani/NetBeansProjects/Mod3/ClienteTwitter2014Alumnos/src/es/us/mwm/twitter/gui/Elemento.java</file>
         </group>
     </open-files>
 </project-private>

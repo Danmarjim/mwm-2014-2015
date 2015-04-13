@@ -6,10 +6,14 @@
 package es.us.mwm.twitter.gui;
 
 import es.us.mwm.twitter.client.TwitterClient;
-import es.us.mwm.twitter.entities.friendsTimeline.Status;
+import es.us.mwm.twitter.entities.trends.Location;
+import es.us.mwm.twitter.entities.trends.Trend;
+import es.us.mwm.twitter.entities.trends.Trend_;
 import es.us.mwm.twitter.entities.tweets.Tweet;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -29,6 +33,7 @@ public class TwitterJFrame extends javax.swing.JFrame {
 
     private TwitterClient client;
     private DefaultListModel statusesListModel = new DefaultListModel();
+    private DefaultListModel trendsListModel = new DefaultListModel();
     
     /**
      * Creates new form TwitterJFrame
@@ -40,7 +45,7 @@ public class TwitterJFrame extends javax.swing.JFrame {
         
         try {
             initUserInfo();
-        } catch (MalformedURLException ex) {
+        } catch (IOException ex) {
             Logger.getLogger(TwitterJFrame.class.getName()).log(Level.SEVERE, null, ex);
         }
         
@@ -50,17 +55,33 @@ public class TwitterJFrame extends javax.swing.JFrame {
             public void run() {
                 System.out.println("Timer Task se esta ejecutando");
                 try {
-                   Response response = client.getFriendsTimeline();
+                   Response responseFriends = client.getFriendsTimeline();
                    statusesListModel.clear();
-                   List<Tweet> statuses = response.readEntity(new GenericType<List<Tweet>>() {});
-                       
+                   List<Tweet> statuses = responseFriends.readEntity(new GenericType<List<Tweet>>() {});
+                   
+                   Response responseTrends = client.getTrends();
+                   trendsListModel.clear();
+                   List<Trend> trends = responseTrends.readEntity(new GenericType<List<Trend>>() {});
+                   List<Trend_> listaTrends = new ArrayList<Trend_>();
+                   
                    for(final Tweet tw : statuses){
                         SwingUtilities.invokeLater(new Runnable(){
                         public void run(){
-                        statusesListModel.addElement(tw);
+                            statusesListModel.addElement(tw);
                         }    
                     });
-                    }                  
+                    }     
+                   
+                   for(final Trend trend : trends ){
+                       listaTrends = trend.getTrends();
+                       for(final Trend_ item : listaTrends){
+                            SwingUtilities.invokeLater(new Runnable(){
+                            public void run(){
+                            trendsListModel.addElement(item);
+                        }    
+                        }); 
+                       }
+                   }
                 } catch (RuntimeException ex){
                     System.out.println("Exception llamando a getFriendsTimeLine. Detalles: " + ex.getMessage());
                 }
@@ -80,12 +101,21 @@ public class TwitterJFrame extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jList2 = new javax.swing.JList();
+        jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton1.setText("Tweet");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setLabelFor(jTextField1);
         jLabel1.setText("Avatar");
@@ -93,34 +123,57 @@ public class TwitterJFrame extends javax.swing.JFrame {
         jLabel1.setMinimumSize(new java.awt.Dimension(48, 48));
         jLabel1.setPreferredSize(new java.awt.Dimension(48, 48));
 
-        jTextField1.setText("Estado");
+        jTextField1.setText("Escribe un nuevo tweet...");
 
-        jList1.setModel(statusesListModel);
-        jList1.setCellRenderer(new Elemento());
+        jList2.setModel(statusesListModel);
+        jList2.setCellRenderer(new Elemento());
+        jScrollPane2.setViewportView(jList2);
+
+        jLabel2.setText("Trending Topics");
+
+        jList1.setModel(trendsListModel);
+        jList1.setCellRenderer(new TrendElemento());
         jScrollPane1.setViewportView(jList1);
+
+        jLabel3.setText("TimeLine");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jTextField1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton1))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE))
-                .addContainerGap())
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1)
+                            .addComponent(jScrollPane2)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 223, Short.MAX_VALUE)
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton1)))
+                        .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel3))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 503, Short.MAX_VALUE)
+                .addGap(14, 14, 14)
+                .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -130,6 +183,12 @@ public class TwitterJFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        String estado = jTextField1.getText().trim();
+        client.updateStatus(estado);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -169,27 +228,46 @@ public class TwitterJFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JList jList1;
+    private javax.swing.JList jList2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 
     private void initUserInfo() throws MalformedURLException{
-        Response responseUserTimeLine = client.getUserTimeline();
-        
-        List<Tweet> tweets = responseUserTimeLine.readEntity(new GenericType<List<Tweet>>(){});
+        Response responseUserTimeLine = client.getUserTimeline();       
+        List<Tweet> tweets = responseUserTimeLine.readEntity(new GenericType<List<Tweet>>(){});        
         
         if(!tweets.isEmpty()){
             Tweet ultimoTweet = tweets.get(0);
-            jTextField1.setText(ultimoTweet.getText());
-            /*String iconSrc =  ultimoTweet.getUser().getProfile_image_url();
+            //jTextField1.setText(ultimoTweet.getText());
+            String iconSrc =  ultimoTweet.getUser().getProfile_image_url();
             URL iconURL = new URL(iconSrc);
             ImageIcon icon = new ImageIcon(iconURL, ultimoTweet.getUser().getName());
-            jLabel1.setIcon(icon);*/
+            jLabel1.setIcon(icon);
             
+            System.out.println("Lista de tweets del usuario\n");
             for(Tweet tweet : tweets){
-                System.out.println(tweet.getText());
-            }            
+                System.out.println(tweet.getText()+"\n");
+            }
+        }
+        
+        //Probando los Trends
+        Response responseUserTimeLine2 = client.getTrends();
+        List<Trend> trends = responseUserTimeLine2.readEntity(new GenericType<List<Trend>>(){});
+        
+        List<Trend_> listaTrends = new ArrayList<Trend_>();
+        
+        System.out.println("Lista de trends en España\n");
+        for(Trend item : trends){
+             //System.out.println(item.getName());
+            listaTrends = item.getTrends();
+            for(Trend_ test : listaTrends){
+                System.out.println(test.getName()+"\n");
+            }
         }
     }
 }
