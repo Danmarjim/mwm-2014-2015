@@ -1,0 +1,23 @@
+#SceneScene1 {
+	position : absolute;
+	left : 0px;
+	top : 0px;
+	width : 960px;
+	height : 540px;
+	background-color : #ffffff;
+	background-image : url('');
+}
+
+.divListItem{
+	width:100%;
+	height:150px;
+	background-color: white;
+	color:black;
+	border: solid 1px black;
+	margin-bottom: 1px;
+}
+
+.divListItem.focus{
+	background-color:blue;
+	color:white;
+}
