@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flappy Bird</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="JS/Vector2.js"></script>
+        <script type="text/javascript" src="JS/Panel.js"></script>
+        <script type="text/javascript" src="JS/Ground.js"></script>
+        <script type="text/javascript" src="JS/Papeline.js"></script>
+        <script type="text/javascript" src="JS/Bird.js"></script>
+    </head>
+    <body>
+        <div id="support"></div>
+        <br>
+        <canvas id="myCanvas" width="576" height="512" style="border: 1px solid"></canvas>
+        <script>
+            try {
+                document.createElement("canvas").getContext("2d");
+                $("#support").html("HTML5 is supported");
+            }catch(e) {
+                $("#support").html("Sorry, but HTML5 is not supported");
+            }
+            var context;
+            var soundFolder = "Assets/Sounds/";
+            var textureFolder = "Assets/Textures/";
+            var lastTime=0;
+            var background, startPanel, gameOverPanel;
+            var gameStates, state;
+            var entities;
+            var scores;
+            
+            //function inicialization context
+            function initializateContext ()
+            {
+                var canvas = document.getElementById("myCanvas");
+                context = canvas.getContext("2d");
+                context.save();
+                initializate ();
+                setInterval("game()",10);
+                
+                
+                context.restore();
+            }
+            //Events
+            window.addEventListener("load", initializateContext, true);
+            window.addEventListener( "keypress", doKeyDown, false );
+            window.addEventListener("click", ClickEvent, false);
+            
+            //Initializate Game: load assets
+            function initializate ()
+            {
+                //Background
+                background = new Image();
+                background.src = textureFolder + 'dayBackground.png';
+                
+                //UI Panels
+                startPanel = new Panel (textureFolder + 'initPanel.png');
+                gameOverPanel = new Panel (textureFolder + 'finalPanel.png');
+                
+                // Crear entidades
+                entities = new Array();
+                entities[0] = new Papeline(context.canvas.width);
+                entities[1] = new Papeline(context.canvas.width + 300);
+                entities[2] = new Ground(0);
+                entities[3] = new Ground(672);
+                entities[4] = new Bird(200);
+                
+                //States
+                gameStates = {START:0, GAMEPLAY:1, GAMEOVER:2};
+                state= gameStates.START;
+            }
+            //Main Loop
+            function game ()
+            {
+                update ();
+                draw ();
+            }
+            //Update Method
+            function update ()
+            {
+                var gameTime = new Date();
+                var frameTime = gameTime - lastTime;
+                
+                for(var i = 0; i < entities.length; i++){
+                    entities[i].update(frameTime);
+                }
+                
+                lastTime= gameTime;
+            }
+            //Draw Method
+            function draw ()
+            {
+                //Clear canvas
+                context.clearRect(0,0,context.canvas.height, context.canvas.width);
+                
+                //Background
+                context.drawImage(background,0,0);
+                
+                // Entities
+                for (var i = 0; i < entities.length; i++){
+                    entities[i].draw();
+                }
+                
+                //UI
+                switch (state)
+                    {
+                        case gameStates.START:
+                            startPanel.draw(context);
+                            break;
+                        case gameStates.GAMEPLAY:
+                            DrawScores();
+                            break;
+                        case gameStates.GAMEOVER:
+                            DrawScores();
+                            gameOverPanel.draw(context);
+                            break;
+                    }   
+            }
+            
+            //Mouse click
+            function ClickEvent(e)
+            {
+                if(state == GameStates.GAMEPLAY)
+                {
+                    var bird = entities[4];
+                    bird.applyImpulse();
+                }
+            }
+            
+            //Press Key board key
+            function doKeyDown(e)
+            {
+                //alert(e.keyCode); 32 = SPACE BAR
+                if (e.keyCode==32)
+                {
+                    switch (state)
+                    {
+                        case gameStates.START:
+                            setNewState(gameStates.GAMEPLAY);
+                            break;
+                        case gameStates.GAMEPLAY:
+                            setNewState(gameStates.GAMEOVER);
+                            break;
+                        case gameStates.GAMEOVER:
+                            setNewState(gameStates.START);
+                            break;
+                    }
+                }
+            }
+            
+            function setNewState(newState)
+            {
+               state = newState;
+               //alert("Current state :"+state);
+               if(state == gameStates.START)
+               {
+                   scores = 0;
+                  for(var i = 0; i < entities.length; i++)
+                  {
+                      entities[i].reset();
+                  }
+               }
+            }
+            
+            // Dibujar los puntos
+            function DrawScores()
+            {
+                context.font = 'bold 40px impact';
+                context.fillStyle = '#FFFFFF';
+                context.fillText('Score ' + scores, context.canvas.width/2, -50, 50);
+                
+                context.strokeStyle = '#543847';
+                context.lineWidth = 2;
+                context.strokeText('Score ' + scores, context.canvas.width/2, -50, 50);
+            }
+            
+        </script>
+    </body>
+</html>
+
