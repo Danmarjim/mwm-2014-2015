@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<!DOCTYPE html>
 <html>
     <head>
         <title>Flappy Bird</title>
@@ -13,8 +7,9 @@ and open the template in the editor.
         <script type="text/javascript" src="JS/Vector2.js"></script>
         <script type="text/javascript" src="JS/Panel.js"></script>
         <script type="text/javascript" src="JS/Ground.js"></script>
-        <script type="text/javascript" src="JS/Papeline.js"></script>
+        <script type="text/javascript" src="JS/Pipeline.js"></script>
         <script type="text/javascript" src="JS/Bird.js"></script>
+        <script type="text/javascript" src="JS/libs/jquery/jquery.js"></script>
     </head>
     <body>
         <div id="support"></div>
@@ -34,7 +29,8 @@ and open the template in the editor.
             var background, startPanel, gameOverPanel;
             var gameStates, state;
             var entities;
-            var scores;
+            var scores = 0;
+            var stateChangeSound;
             
             //function inicialization context
             function initializateContext ()
@@ -51,7 +47,7 @@ and open the template in the editor.
             //Events
             window.addEventListener("load", initializateContext, true);
             window.addEventListener( "keypress", doKeyDown, false );
-            window.addEventListener("click", ClickEvent, false);
+            window.addEventListener( "click", clickEvent, false );
             
             //Initializate Game: load assets
             function initializate ()
@@ -64,17 +60,20 @@ and open the template in the editor.
                 startPanel = new Panel (textureFolder + 'initPanel.png');
                 gameOverPanel = new Panel (textureFolder + 'finalPanel.png');
                 
-                // Crear entidades
+                //Entities
                 entities = new Array();
-                entities[0] = new Papeline(context.canvas.width);
-                entities[1] = new Papeline(context.canvas.width + 300);
-                entities[2] = new Ground(0);
-                entities[3] = new Ground(672);
-                entities[4] = new Bird(200);
+                entities [0] = new Pipeline(context.canvas.width);
+                entities [1] = new Pipeline(context.canvas.width+300);
+                entities [2] = new Ground(0);
+                entities [3] = new Ground(672); //672 = ground image width
+                entities [4] = new Bird(200);
                 
                 //States
                 gameStates = {START:0, GAMEPLAY:1, GAMEOVER:2};
                 state= gameStates.START;
+                
+                //Sonidos
+                stateChangeSound = new Audio(soundFolder + 'sfx_swooshing.ogg');
             }
             //Main Loop
             function game ()
@@ -88,7 +87,8 @@ and open the template in the editor.
                 var gameTime = new Date();
                 var frameTime = gameTime - lastTime;
                 
-                for(var i = 0; i < entities.length; i++){
+                for (var i=0; i<entities.length; i++)
+                {
                     entities[i].update(frameTime);
                 }
                 
@@ -103,8 +103,9 @@ and open the template in the editor.
                 //Background
                 context.drawImage(background,0,0);
                 
-                // Entities
-                for (var i = 0; i < entities.length; i++){
+                //Entities
+                for (var i=0; i<entities.length; i++)
+                {
                     entities[i].draw();
                 }
                 
@@ -115,24 +116,28 @@ and open the template in the editor.
                             startPanel.draw(context);
                             break;
                         case gameStates.GAMEPLAY:
-                            DrawScores();
+                            drawScores();
                             break;
                         case gameStates.GAMEOVER:
-                            DrawScores();
+                            drawScores();
                             gameOverPanel.draw(context);
                             break;
-                    }   
+                    }
+                
+               
+               
+               
             }
-            
-            //Mouse click
-            function ClickEvent(e)
+            //Click Event
+            function clickEvent(e)
             {
-                if(state == GameStates.GAMEPLAY)
-                {
-                    var bird = entities[4];
-                    bird.applyImpulse();
+                if(state==gameStates.GAMEPLAY){
+                    //get bird for entities [4]
+                    var bird = entities [4];
+                    bird.applyBirdImpulse();
                 }
             }
+            
             
             //Press Key board key
             function doKeyDown(e)
@@ -157,20 +162,23 @@ and open the template in the editor.
             
             function setNewState(newState)
             {
+                stateChangeSound.currentTime = 0;
+                stateChangeSound.play();
+                
                state = newState;
                //alert("Current state :"+state);
-               if(state == gameStates.START)
+               if (state==gameStates.START)
                {
-                   scores = 0;
-                  for(var i = 0; i < entities.length; i++)
-                  {
-                      entities[i].reset();
-                  }
+                    scores = 0;
+                    for (var i=0; i<entities.length; i++)
+                    {
+                        entities[i].reset();
+                    }
                }
             }
             
-            // Dibujar los puntos
-            function DrawScores()
+            //Dibujar los puntos
+            function drawScores()
             {
                 context.font = 'bold 40px impact';
                 context.fillStyle = '#FFFFFF';
@@ -184,4 +192,3 @@ and open the template in the editor.
         </script>
     </body>
 </html>
-
