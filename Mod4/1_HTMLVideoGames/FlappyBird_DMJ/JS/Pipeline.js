@@ -22,6 +22,9 @@ function Pipeline (initPosX)
             
             if (!this.passed && this.scrollX < 50)
             {
+                newPointSound.currentTime = 0;
+				newPointSound.play();
+                
                this.passed = true;
                scores += 1;
             }

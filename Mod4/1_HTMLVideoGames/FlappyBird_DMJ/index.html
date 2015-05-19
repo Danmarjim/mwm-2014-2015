@@ -31,7 +31,11 @@
             var entities;
             var scores = 0;
             var stateChangeSound;
-            
+            var colisionPipelineBirdSound;
+            var deadBirdSound;
+            var newPointSound;
+            var applyImpulseSound;
+    
             //function inicialization context
             function initializateContext ()
             {
@@ -74,6 +78,11 @@
                 
                 //Sonidos
                 stateChangeSound = new Audio(soundFolder + 'sfx_swooshing.ogg');
+                colisionPipelineBirdSound = new Audio(soundFolder + 'sfx_hit.ogg');
+                deadBirdSound = new Audio(soundFolder + 'sfx_die.ogg');
+                newPointSound = new Audio(soundFolder + 'sfx_point.ogg');
+                applyImpulseSound = new Audio(soundFolder + 'sfx_wing.ogg');
+                
             }
             //Main Loop
             function game ()
@@ -134,6 +143,10 @@
                 if(state==gameStates.GAMEPLAY){
                     //get bird for entities [4]
                     var bird = entities [4];
+                    
+                    applyImpulseSound.currentTime = 0;
+                    applyImpulseSound.play();
+                    
                     bird.applyBirdImpulse();
                 }
             }
@@ -182,11 +195,10 @@
             {
                 context.font = 'bold 40px impact';
                 context.fillStyle = '#FFFFFF';
-                context.fillText('Score ' + scores, context.canvas.width/2, -50, 50);
-                
+                context.fillText('Score : '  + scores, context.canvas.width/2 -50 ,50);
                 context.strokeStyle = '#543847';
                 context.lineWidth = 2;
-                context.strokeText('Score ' + scores, context.canvas.width/2, -50, 50);
+                context.strokeText('Score : '  + scores, context.canvas.width/2 -50 ,50);	
             }
             
         </script>

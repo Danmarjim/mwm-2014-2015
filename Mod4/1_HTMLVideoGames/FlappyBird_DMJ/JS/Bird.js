@@ -2,12 +2,47 @@ function Bird (y)
 {
     //attributes
     this.textures = new Array();
-    this.textures[0] = new Image();
-    this.textures[0].src = textureFolder + 'birdOrange0.png';
-    this.textures[1] = new Image();
-    this.textures[1].src = textureFolder + 'birdOrange1.png';
-    this.textures[2] = new Image();
-    this.textures[2].src = textureFolder + 'birdOrange2.png';
+    
+    //Para hacer el aleteo mas lento.
+    this.textures[0] = new Image();	
+	this.textures[0].src = textureFolder + 'birdOrange0.png';
+	
+	this.textures[1] = new Image();
+	this.textures[1].src = textureFolder + 'birdOrange0.png';
+	
+	this.textures[2] = new Image();
+	this.textures[2].src = textureFolder + 'birdOrange0.png';
+	
+	
+	this.textures[3] = new Image();
+	this.textures[3].src = textureFolder + 'birdOrange0.png';
+	
+	
+	this.textures[4] = new Image();	
+	this.textures[4].src = textureFolder + 'birdOrange1.png';
+	
+	this.textures[5] = new Image();
+	this.textures[5].src = textureFolder + 'birdOrange1.png';
+	
+	this.textures[6] = new Image();
+	this.textures[6].src = textureFolder + 'birdOrange1.png';
+	
+	
+	this.textures[7] = new Image();
+	this.textures[7].src = textureFolder + 'birdOrange1.png';
+	
+	
+	this.textures[8] = new Image();	
+	this.textures[8].src = textureFolder + 'birdOrange2.png';
+	
+	this.textures[9] = new Image();
+	this.textures[9].src = textureFolder + 'birdOrange2.png';
+	
+	this.textures[10] = new Image();
+	this.textures[10].src = textureFolder + 'birdOrange2.png';	
+	
+	this.textures[11] = new Image();
+	this.textures[11].src = textureFolder + 'birdOrange2.png';
     this.currentFrame = 0;
     //methods
     //To calculate the height we use the freefall equation
@@ -30,6 +65,9 @@ function Bird (y)
             this.position.y=this.h0 + (this.v0*this.time-0.5*this.g*Math.pow(this.time,2));
             if(this.position.y>context.canvas.height)//if the bird touch the ground
             {
+                deadBirdSound.currentTime = 0;
+                deadBirdSound.play();
+                
                 setNewState(gameStates.GAMEOVER);
             }
             //Collisions
@@ -63,6 +101,9 @@ function Bird (y)
             if(vx >= pipeline.scrollX && vx < pipeline.scrollX + 52
                     && (vy < pipeline.gapY-50 || vy > pipeline.gapY+50))
             {
+                colisionPipelineBirdSound.currentTime = 0;
+				colisionPipelineBirdSound.play();
+                        
                 setNewState(gameStates.GAMEOVER);
             }
         }
