@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33A3CBDD1B38B2F20069FE8E /* CustomIOSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CBDC1B38B2F20069FE8E /* CustomIOSAlertView.m */; };
+		33A3CBE31B38B7870069FE8E /* EVMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CBE21B38B7870069FE8E /* EVMainController.m */; };
+		33B94B101B3AEE31004CF0FA /* EVWeatherAtm.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B94B0F1B3AEE31004CF0FA /* EVWeatherAtm.m */; };
+		33B94B121B3AF1DB004CF0FA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B94B111B3AF1DB004CF0FA /* MapKit.framework */; };
+		33F7A4021B3A20DF009394F1 /* EVMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F7A4011B3A20DF009394F1 /* EVMapController.m */; };
+		33FDDD781B387EFB00D76A34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDD771B387EFB00D76A34 /* main.m */; };
+		33FDDD7B1B387EFB00D76A34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDD7A1B387EFB00D76A34 /* AppDelegate.m */; };
+		33FDDD811B387EFB00D76A34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33FDDD7F1B387EFB00D76A34 /* Main.storyboard */; };
+		33FDDD831B387EFB00D76A34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FDDD821B387EFB00D76A34 /* Images.xcassets */; };
+		33FDDD861B387EFB00D76A34 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33FDDD841B387EFB00D76A34 /* LaunchScreen.xib */; };
+		33FDDD921B387EFC00D76A34 /* EvaliOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDD911B387EFC00D76A34 /* EvaliOSTests.m */; };
+		33FDDD9D1B387F6D00D76A34 /* EVLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDD9C1B387F6D00D76A34 /* EVLoginController.m */; };
+		33FDDDA31B3882D800D76A34 /* UIColor+MyColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 33FDDDA21B3882D800D76A34 /* UIColor+MyColor.m */; };
+		AC07C0496CB43FA01B5E90A5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 858F857229C7A7735B1A8774 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33FDDD8C1B387EFC00D76A34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33FDDD6A1B387EFB00D76A34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33FDDD711B387EFB00D76A34;
+			remoteInfo = EvaliOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33A3CBDB1B38B2F20069FE8E /* CustomIOSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOSAlertView.h; sourceTree = "<group>"; };
+		33A3CBDC1B38B2F20069FE8E /* CustomIOSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOSAlertView.m; sourceTree = "<group>"; };
+		33A3CBE11B38B7870069FE8E /* EVMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVMainController.h; sourceTree = "<group>"; };
+		33A3CBE21B38B7870069FE8E /* EVMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVMainController.m; sourceTree = "<group>"; };
+		33B94B0E1B3AEE31004CF0FA /* EVWeatherAtm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVWeatherAtm.h; sourceTree = "<group>"; };
+		33B94B0F1B3AEE31004CF0FA /* EVWeatherAtm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVWeatherAtm.m; sourceTree = "<group>"; };
+		33B94B111B3AF1DB004CF0FA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		33F7A4001B3A20DF009394F1 /* EVMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVMapController.h; sourceTree = "<group>"; };
+		33F7A4011B3A20DF009394F1 /* EVMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVMapController.m; sourceTree = "<group>"; };
+		33FDDD721B387EFB00D76A34 /* EvaliOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EvaliOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33FDDD761B387EFB00D76A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33FDDD771B387EFB00D76A34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33FDDD791B387EFB00D76A34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		33FDDD7A1B387EFB00D76A34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		33FDDD801B387EFB00D76A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33FDDD821B387EFB00D76A34 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		33FDDD851B387EFB00D76A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		33FDDD8B1B387EFC00D76A34 /* EvaliOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EvaliOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33FDDD901B387EFC00D76A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33FDDD911B387EFC00D76A34 /* EvaliOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EvaliOSTests.m; sourceTree = "<group>"; };
+		33FDDD9B1B387F6D00D76A34 /* EVLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EVLoginController.h; sourceTree = "<group>"; };
+		33FDDD9C1B387F6D00D76A34 /* EVLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EVLoginController.m; sourceTree = "<group>"; };
+		33FDDDA11B3882D800D76A34 /* UIColor+MyColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MyColor.h"; sourceTree = "<group>"; };
+		33FDDDA21B3882D800D76A34 /* UIColor+MyColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MyColor.m"; sourceTree = "<group>"; };
+		858F857229C7A7735B1A8774 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		912EE73994603DECA3FBBFD9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FC5E2C61CCCD2300405FC86B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33FDDD6F1B387EFB00D76A34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33B94B121B3AF1DB004CF0FA /* MapKit.framework in Frameworks */,
+				AC07C0496CB43FA01B5E90A5 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33FDDD881B387EFC00D76A34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33A3CBDA1B38B2D60069FE8E /* CustomiOSAlert */ = {
+			isa = PBXGroup;
+			children = (
+				33A3CBDB1B38B2F20069FE8E /* CustomIOSAlertView.h */,
+				33A3CBDC1B38B2F20069FE8E /* CustomIOSAlertView.m */,
+			);
+			name = CustomiOSAlert;
+			sourceTree = "<group>";
+		};
+		33B94B0D1B3AEDF5004CF0FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33B94B0E1B3AEE31004CF0FA /* EVWeatherAtm.h */,
+				33B94B0F1B3AEE31004CF0FA /* EVWeatherAtm.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		33FDDD691B387EFB00D76A34 = {
+			isa = PBXGroup;
+			children = (
+				33FDDD741B387EFB00D76A34 /* EvaliOS */,
+				33FDDD8E1B387EFC00D76A34 /* EvaliOSTests */,
+				33FDDD731B387EFB00D76A34 /* Products */,
+				8E7C5650EA2213A8AE639E11 /* Pods */,
+				95DD19511EAD131136376B1F /* Frameworks */,
+				33B94B111B3AF1DB004CF0FA /* MapKit.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		33FDDD731B387EFB00D76A34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33FDDD721B387EFB00D76A34 /* EvaliOS.app */,
+				33FDDD8B1B387EFC00D76A34 /* EvaliOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33FDDD741B387EFB00D76A34 /* EvaliOS */ = {
+			isa = PBXGroup;
+			children = (
+				33FDDD9F1B3882A800D76A34 /* utils */,
+				33FDDD9E1B387F7700D76A34 /* views */,
+				33FDDD791B387EFB00D76A34 /* AppDelegate.h */,
+				33FDDD7A1B387EFB00D76A34 /* AppDelegate.m */,
+				33FDDD7F1B387EFB00D76A34 /* Main.storyboard */,
+				33FDDD821B387EFB00D76A34 /* Images.xcassets */,
+				33FDDD841B387EFB00D76A34 /* LaunchScreen.xib */,
+				33FDDD751B387EFB00D76A34 /* Supporting Files */,
+			);
+			path = EvaliOS;
+			sourceTree = "<group>";
+		};
+		33FDDD751B387EFB00D76A34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33FDDD761B387EFB00D76A34 /* Info.plist */,
+				33FDDD771B387EFB00D76A34 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33FDDD8E1B387EFC00D76A34 /* EvaliOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				33FDDD911B387EFC00D76A34 /* EvaliOSTests.m */,
+				33FDDD8F1B387EFC00D76A34 /* Supporting Files */,
+			);
+			path = EvaliOSTests;
+			sourceTree = "<group>";
+		};
+		33FDDD8F1B387EFC00D76A34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				33FDDD901B387EFC00D76A34 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		33FDDD9E1B387F7700D76A34 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				33FDDD9B1B387F6D00D76A34 /* EVLoginController.h */,
+				33FDDD9C1B387F6D00D76A34 /* EVLoginController.m */,
+				33A3CBE11B38B7870069FE8E /* EVMainController.h */,
+				33A3CBE21B38B7870069FE8E /* EVMainController.m */,
+				33F7A4001B3A20DF009394F1 /* EVMapController.h */,
+				33F7A4011B3A20DF009394F1 /* EVMapController.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		33FDDD9F1B3882A800D76A34 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				33B94B0D1B3AEDF5004CF0FA /* Model */,
+				33A3CBDA1B38B2D60069FE8E /* CustomiOSAlert */,
+				33FDDDA11B3882D800D76A34 /* UIColor+MyColor.h */,
+				33FDDDA21B3882D800D76A34 /* UIColor+MyColor.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		8E7C5650EA2213A8AE639E11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				912EE73994603DECA3FBBFD9 /* Pods.debug.xcconfig */,
+				FC5E2C61CCCD2300405FC86B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95DD19511EAD131136376B1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				858F857229C7A7735B1A8774 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33FDDD711B387EFB00D76A34 /* EvaliOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33FDDD951B387EFC00D76A34 /* Build configuration list for PBXNativeTarget "EvaliOS" */;
+			buildPhases = (
+				7D0EBF89510B57B2F35F6018 /* Check Pods Manifest.lock */,
+				33FDDD6E1B387EFB00D76A34 /* Sources */,
+				33FDDD6F1B387EFB00D76A34 /* Frameworks */,
+				33FDDD701B387EFB00D76A34 /* Resources */,
+				EA2EE331750FD514B5513945 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EvaliOS;
+			productName = EvaliOS;
+			productReference = 33FDDD721B387EFB00D76A34 /* EvaliOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33FDDD8A1B387EFC00D76A34 /* EvaliOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33FDDD981B387EFC00D76A34 /* Build configuration list for PBXNativeTarget "EvaliOSTests" */;
+			buildPhases = (
+				33FDDD871B387EFC00D76A34 /* Sources */,
+				33FDDD881B387EFC00D76A34 /* Frameworks */,
+				33FDDD891B387EFC00D76A34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33FDDD8D1B387EFC00D76A34 /* PBXTargetDependency */,
+			);
+			name = EvaliOSTests;
+			productName = EvaliOSTests;
+			productReference = 33FDDD8B1B387EFC00D76A34 /* EvaliOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33FDDD6A1B387EFB00D76A34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Daniel Martin Jimenez";
+				TargetAttributes = {
+					33FDDD711B387EFB00D76A34 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = DWZ77GEEBY;
+					};
+					33FDDD8A1B387EFC00D76A34 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 33FDDD711B387EFB00D76A34;
+					};
+				};
+			};
+			buildConfigurationList = 33FDDD6D1B387EFB00D76A34 /* Build configuration list for PBXProject "EvaliOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33FDDD691B387EFB00D76A34;
+			productRefGroup = 33FDDD731B387EFB00D76A34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33FDDD711B387EFB00D76A34 /* EvaliOS */,
+				33FDDD8A1B387EFC00D76A34 /* EvaliOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33FDDD701B387EFB00D76A34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FDDD811B387EFB00D76A34 /* Main.storyboard in Resources */,
+				33FDDD861B387EFB00D76A34 /* LaunchScreen.xib in Resources */,
+				33FDDD831B387EFB00D76A34 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33FDDD891B387EFC00D76A34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D0EBF89510B57B2F35F6018 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EA2EE331750FD514B5513945 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33FDDD6E1B387EFB00D76A34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33B94B101B3AEE31004CF0FA /* EVWeatherAtm.m in Sources */,
+				33FDDD9D1B387F6D00D76A34 /* EVLoginController.m in Sources */,
+				33F7A4021B3A20DF009394F1 /* EVMapController.m in Sources */,
+				33A3CBE31B38B7870069FE8E /* EVMainController.m in Sources */,
+				33FDDDA31B3882D800D76A34 /* UIColor+MyColor.m in Sources */,
+				33FDDD7B1B387EFB00D76A34 /* AppDelegate.m in Sources */,
+				33FDDD781B387EFB00D76A34 /* main.m in Sources */,
+				33A3CBDD1B38B2F20069FE8E /* CustomIOSAlertView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33FDDD871B387EFC00D76A34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FDDD921B387EFC00D76A34 /* EvaliOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33FDDD8D1B387EFC00D76A34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33FDDD711B387EFB00D76A34 /* EvaliOS */;
+			targetProxy = 33FDDD8C1B387EFC00D76A34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33FDDD7F1B387EFB00D76A34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33FDDD801B387EFB00D76A34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33FDDD841B387EFB00D76A34 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33FDDD851B387EFB00D76A34 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33FDDD931B387EFC00D76A34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		33FDDD941B387EFC00D76A34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33FDDD961B387EFC00D76A34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 912EE73994603DECA3FBBFD9 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = EvaliOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33FDDD971B387EFC00D76A34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC5E2C61CCCD2300405FC86B /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = EvaliOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		33FDDD991B387EFC00D76A34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EvaliOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EvaliOS.app/EvaliOS";
+			};
+			name = Debug;
+		};
+		33FDDD9A1B387EFC00D76A34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EvaliOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EvaliOS.app/EvaliOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33FDDD6D1B387EFB00D76A34 /* Build configuration list for PBXProject "EvaliOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33FDDD931B387EFC00D76A34 /* Debug */,
+				33FDDD941B387EFC00D76A34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33FDDD951B387EFC00D76A34 /* Build configuration list for PBXNativeTarget "EvaliOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33FDDD961B387EFC00D76A34 /* Debug */,
+				33FDDD971B387EFC00D76A34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33FDDD981B387EFC00D76A34 /* Build configuration list for PBXNativeTarget "EvaliOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33FDDD991B387EFC00D76A34 /* Debug */,
+				33FDDD9A1B387EFC00D76A34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33FDDD6A1B387EFB00D76A34 /* Project object */;
+}

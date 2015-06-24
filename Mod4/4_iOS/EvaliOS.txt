@@ -1,0 +1,9 @@
+Para este ejercicio he utilizado la funcionalidad de CocoaPod para facilitar el trabajo a la hora de añadir nuevas librerías.
+
+Mediante Cocoa he añadido la librería SSBouncyButton para darle cierta animación al botón flotando del controlador del Mapa. 
+
+La librería CustomiOSAlert la he añadido de forma manual puesto que he realizado alguna pequeña modificación en el código, como por ejemplo el color del botón CONTINUAR.
+
+Del controlador donde se muestra la info del tiempo de la ciudad al controlador del mapa paso información mediante el segue, en este caso Lat, Lon y el nombre de la ciudad para mostrar un mapa u otro dependiendo de la ciudad que hayamos escogido en el Picker.
+
+Para el Picker he añadido una pequeña ToolBar, una vez se abre el picker se escoge por defecto la primera ciudad de la lista y a medida que se va pasando por el picker se cambia el titulo (en mi caso es un botón por lo que se cambia el currentTitle). Normalmente se utiliza un textField y se añade el picker a este mediante el inputView pero no me gusta que se pueda seleccionar el texto, cortar o copiar el texto, por lo que utilizo un textField que programo por código y lo escondo detrás de la NavBar. La función del botón es la de mostrar el picker y una vez elegida la ciudad se modifica el titulo de dicho botón por el nombre de la ciudad. Se puede decir que este ha sido el único problema que me he encontrado.
